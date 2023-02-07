@@ -1,12 +1,18 @@
 <!-- Cheat Sheet -->
 ## Cheat Sheet
-<!--Check git satus-->
+Check git satus:
 git status
-<!--Shortcut to add changes to GitHub-->
+
+
+Shortcut to add changes to GitHub
 git add . && git commit -m " " && git push origin master 
 
-<!--Launch host app-->
+Launch host app
 npm run dev
+
+notes left by me for me can be found by searching for ojo with cmd+f
+ojo
+
 
 <!-- Structure -->
 <!--
@@ -33,9 +39,9 @@ npm run dev
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#acerca-del-proyecto">About the Project</a>
+      <a href="#about-the-project">About the Project</a>
       <ul>
-        <li><a href="#construido-con">Built With </a></li>
+        <li><a href="#built-with">Built With </a></li>
       </ul>
     </li>
     <li>
@@ -59,44 +65,48 @@ npm run dev
       </ul>
     </li>
     <li><a href="#about">About</a></li>
-    <li><a href="#agradecimientos">Agradecimientos</a></li>
-    <li><a href="#desafío-técnico">Desafío Técnico</a></li>
-    <li><a href="#grande-error">Grande Error</a></li>
+    <li><a href="#acknowledgment">Acknowledgment</a></li>
+    <li><a href="#technical-challenge">Technical Challenge</a></li>
+    <li><a href="#big-mistake">Big Mistake</a></li>
     <li><a href="#cheat-sheet">Cheat Sheet</a></li>
-
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
 
-## About del Project
+## About the Project
 
 <img src="./resources/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
 
-Como parte del midterm de este bootcamp se nos asignó un proyecto titulado Circle Agency. El objetivo del mismo fue diseñar una página web para una compañía ficticia de diseño web que tuviera tres aspectos principales; la página debía ser "responsive" usando HTML, CSS y JavaScript con diferentes propiedades de diseño como Flexbox y Grid. Además era necesario utilizar Vercel para lanzar la página en vivo. Un reto extra del quer hablaremos más adelante fue el uso de GitHub para poder trabajar en pareja sobre un mismo documento. 
 
-La estructura del proyecto se basó en tres páginas; una landing page, una página de proyectos y una página de Contact Us. En la landing page se muestra información general de Circle Agency. En la sección de projects se destacan los proyectos de la empresa y en el Contact Us se creó un formulario de contactos para que los usuarios se comuniquen con la empresa.
+<!-- ojo translate -->
+Estas son las directrices para el proyecto final de Vue.js:
 
-Dicho esto, la pagina debía tener funcionalidades creadas con JavaScript. Entre ellas, hacer un fetch de una API para mostrar información en la sección de projects. Esto debía hacerse modificando el DOM. Otra funcionalidad fue la del formulario de Contact Us que permite a los usuarios enviar su información al API al igual que mostrar una alerta en caso de poder haber enviado correctamente o no la misma. 
+- Creación de cuenta: los usuarios podrán registrarse en la aplicación mediante un proceso de Sign Up, iniciar sesión con Log In y cerrar sesión con Log Out.
+Gestión de tareas: los usuarios podrán crear, editar, marcar como completadas o desmarcar, y eliminar tareas.
+- Almacenamiento de datos: la aplicación estará conectada a Supabase y se guardará toda la información de las tareas y usuarios en esa plataforma.
+Gestión del estado: se usarán las stores de Pinia para conectarse con el backend y controlar el estado de la aplicación.
+- Navegación: se utilizará Vue Router para navegar por la página sin tener que hacer un refresh.
+- Estilo único: se creará un solo archivo de estilo (assets/style.css) y se insertará correctamente en main.js para tener acceso a las clases y los ids de los componentes.
+- Responsive design: la página será responsive y tendrá al menos dos versiones: mobile y desktop.
+- Despliegue: la aplicación será desplegada en Vercel.
+- Manejo de operaciones asíncronas: las operaciones asíncronas se manejarán correctamente con promises o async/await.
+- Documentación: se mantendrá una ruta de trabajo en el readme del repositorio, actualizándolo diariamente.
 
-Este proyecto se hizo en pareja y las tareas se dividieron a medida que ibamos avanzando. Muchos aspectos del trabajo se hicieron en conjunto con el deseo de aprender de las fortalezas de cada una en diferentes aspectos de lo que conocemos sobre codificar. 
+
+I have applied the Creative Commons License for this project. 
 
 
-No hemos aplicado una licencia para este proyecto. La próxima vez usaremos Creative Commons.
-
-A lo largo del proyecto utilizamos enlaces como recursos para finalizarlo exitosamente:
-     <p align="left"><a href="https://youtu.be/flItyHiDm7E">Hamburger Button</a></p>
-     <p align="left"><a href="https://jsonplaceholder.typicode.com/posts">API</a></p>
-     <p align="left"><a href="https://getbutterfly.com/fast-and-accessible-css-only-client-logo-carousel/">Slider</a></p>
-     <p align="left"><a href="https://cssgrid-generator.netlify.app/">Grid Generator</a></p>
-     <p align="left"><a href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap">Google Font Libraries</a></p>
+Resources:
+     <p align="left"><a href="#link">descriptive text</a></p>
+     
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Construido Con
+### Built With
 
-Este proyecto se construyó con HTML, CSS y JavaScript. Para lanzar el proyecto a la web utilizamos Vercel y para temas de estructura organizativa y seguridad en cuanto al progreso se utilizó GitHub con multi-branching, ya que estuvimos trabajando en pareja. Asegurando que todas las versiones del proyecto no fueran afectadas de forma negativa y todo se guardara exitosamente.
+This project was built with vue.js.....
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,43 +197,34 @@ Este proyecto se construyó con HTML, CSS y JavaScript. Para lanzar el proyecto 
 
 <!-- Acerca de mi -->
 
-## Acerca
+## About
 
-Como ya hemos mencionado, este proyecto se realizó en pareja por Laura Isabel Anguita e Ikerne Sanz. Para ambas es la primera vez que nos exponemos al mundo de la programación Front-End, aunque sí estuvimos trabajando por tres años, en una empresa dedicada a AI haciendo Language Data Analysis.
-
-Laura - [https://www.linkedin.com/in/lianguita/](https://www.linkedin.com/in/lianguita/) - anguita.lauraisa@gmail.com
-
+ 
 Ikerne - [https://www.linkedin.com/in/ikernesg/](https://www.linkedin.com/in/ikernesg/) - ikernesanz@gmail.com
 
+<!-- ojo change links this are from the midterm -->
 Project Links: [https://midterm-ironhack-4d5i2r2pt-ikerne.vercel.app/](https://midterm-ironhack-4d5i2r2pt-ikerne.vercel.app/)
-              & [https://github.com/Ikerne/midterm-ironhack](https://github.com/Ikerne/midterm-ironhack)
+              & [https://github.com/Ikerne/midterm-ironhack](https://github.com/Ikerne/midterm-ironhack)  
 
-Presentation Link: [https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-GV33y0MsDX1cV2_IcLf5C8I/edit#slide=id.p](https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-GV33y0MsDX1cV2_IcLf5C8I/edit#slide=id.p)
+Presentation Link: [https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-GV33y0MsDX1cV2_IcLf5C8I/edit#slide=id.p](https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-GV33y0MsDX1cV2_IcLf5C8I/edit#slide=id.p) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 
-## Agradecimientos
-
+## Acknowledgment
+<!-- ojo translate -->
 Queremos agradecer a los tres profesores de este bootcamp en Ironhack; Diego Zito, Jarko Garrido y Aleix Abuli. Gracias por su tiempo, toda la información brindada, su paciencia y las horas extra para ayudarnos a solventar todo tipo de dudas. También, al SOC por facilitarnos este curso de modo que podamos seguir formándonos profesionalmente. 
 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Desafío Técnico
-
-– El primer reto que nos encontramos fue poder trabajar exitosamente con diferentes branches dentro de GitHub. 
-
-– El segundo reto ha sido la parte de JavaScript en la sección de Projects y Contact Us. Al ser la primera vez que nos enfrentamos a este lenguaje en temas de proyecto. 
-
-– El nivel de proyecto es muy completo y extenso. Por lo que nos tomó tiempo saber cómo organizarnos para cumplir con todos los objetivos que el proyecto conlleva. 
+## Technical Challenge
 
 
-## Grande Error
 
 
-Nuestros errores más grandes se dieron en nuestros commits a GitHub cuando había que hacer merge de las tres ramas. Se nos borraron avances en varias ocasiones y perdimos horas de trabajo tratando de solucionar este problema todos los días. No obstante, nos organizamos para trabajar en diferentes secciones del proyecto y evitar conflictos y solaparnos a la hora de hacer merge. Luego, con la ayuda de los profesores aprendimos a hacer copias de seguridad antes de los commits y merges para no perder nuestro progreso. 
+## Big Mistake
 
-Una lección que nos llevamos es que no está mal "aim high", siempre y cuando reconozcamos las limitaciones de tiempo y sea manejable el nivel del estrés del equipo. Ciertamente, nos descatacamos por lo que significa "team work makes the dream work", pero hubo momentos donde nos teníamos que recordar dónde estamos y qué debemos priorizar mantieniendo el objetivo final siempre en mente. 
+
