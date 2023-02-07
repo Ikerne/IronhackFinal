@@ -114,6 +114,7 @@ This project was built with vue.js.....
 
 #### Backlog
 - [ ] task
+
 #### Day One
 
 ###### Tuesday 07, February 2023
@@ -126,70 +127,69 @@ This project was built with vue.js.....
 #### Day Two
 
 ###### Wednesday  08, February 2023
-- [x] 
+- [ ] task
 
 #### Day Three
 
 ###### Thursday 09, February 2023
-- [x] 
-
+- [ ] task
 
 #### Day Four
 
 ###### Friday 10, February 2023
-- [x] 
-
+- [ ] task
 
 #### Day Five
 
-###### Monday 13, Fe
+###### Monday 13, February 2023
+- [ ] task
 
 #### Day Six
 
 ###### Tuesday 14, February 2023
-- [x] 
+- [ ] task 
 
 #### Day Seven
 
 ###### Wednesday 15, February 2023
-- [x] 
+- [ ] task
 
 #### Day Eight
 
 ###### Thursday 16, February 2023
-- [x] 
+- [ ] task
 
 #### Day Nine
 
 ###### Friday 17, February 2023
-- [x] 
+- [ ] task
 
 #### Day Ten
 
 ###### Monday 20, February 2023
-- [x] 
+- [ ] task
 
 #### Day Eleven
 
 ###### Tuesday 21, February 2023
-- [x] 
+- [ ] task
 
 #### Day Twelve
 
 ###### Wednesday 22, February 2023
-- [x] 
+- [ ] task
 
 
 #### Day Thirteen
 
 ###### Thursday 23, February 2023
-- [x] 
+- [ ] task
 
 
 #### Day Fourteen
 
 ###### Friday 24, February 2023
-- [x] 
+- [ ] task
 
 
 
