@@ -48,9 +48,17 @@ npm run dev
         <li><a href="#day-four">Friday 10, February 2023</a></li>
         <li><a href="#day-five">Monday 13, February 2023</a></li>
         <li><a href="#day-six">Tuesday 14, February 2023</a></li>
+        <li><a href="#day-seven">Wednesday 15, February 2023</a></li>
+        <li><a href="#day-eight">Thursday 16, February 2023</a></li>
+        <li><a href="#day-nine">Friday 17, February 2023</a></li>
+        <li><a href="#day-ten">Monday 20, February 2023</a></li>
+        <li><a href="#day-eleven">Tuesday 21, February 2023</a></li>
+        <li><a href="#day-twelve">Wednesday 22, February 2023</a></li>
+        <li><a href="#day-thirteen">Thursday 23, February 2023</a></li>
+        <li><a href="#day-fourteen">Friday 24, February 2023</a></li>
       </ul>
     </li>
-    <li><a href="#acerca">Acerca</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#agradecimientos">Agradecimientos</a></li>
     <li><a href="#desafío-técnico">Desafío Técnico</a></li>
     <li><a href="#grande-error">Grande Error</a></li>
@@ -61,7 +69,7 @@ npm run dev
 
 <!-- ABOUT THE PROJECT -->
 
-## Acerca del Proyecto
+## About del Project
 
 <img src="./resources/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
 
@@ -95,48 +103,83 @@ Este proyecto se construyó con HTML, CSS y JavaScript. Para lanzar el proyecto 
 ## Roadmap
 
 #### Backlog
-
+- [x]
 #### Day One
 
 ###### Tuesday 07, February 2023
-- [x] Crear el repo
-- [x] Crear dos branches, una para cada miembro del equipo
+- [x] Create the repository
+- [x] Import repository to GitHub
+- [x] Read & review boilerplate
+- [x] Plan next steps
+- [x] Start README
 
 #### Day Two
 
 ###### Wednesday  08, February 2023
-- [x] Crear el HTML de Landing Page
-- [x] Crear el JavaScript de Landing Page
-- [x] Crear el HTML de Projects
-- [x] Crear el HTML de Contact Us
+- [x] 
 
 #### Day Three
 
 ###### Thursday 09, February 2023
-- [x] Crear el JavaScript de Projects
-- [x] Crear el JavaScript de Contact Us
-- [x] Crear el CSS de Projects
-- [x] Crear el CSS de Contact Us
+- [x] 
 
 
 #### Day Four
 
 ###### Friday 10, February 2023
-- [x] Crear el CSS de Hamburger Menu
-- [x] Crear el CSS de las Media Queries
-- [x] Terminar CSS Landing Page
-- [x] Crear la presentación
+- [x] 
 
 
 #### Day Five
 
-###### Viernes 27, February 2023
-- [x] Terminar el README
+###### Monday 13, Fe
 
 #### Day Six
 
-###### Viernes 27, February 2023
-- [x] Terminar el README
+###### Tuesday 14, February 2023
+- [x] 
+
+#### Day Seven
+
+###### Wednesday 15, February 2023
+- [x] 
+
+#### Day Eight
+
+###### Thursday 16, February 2023
+- [x] 
+
+#### Day Nine
+
+###### Friday 17, February 2023
+- [x] 
+
+#### Day Ten
+
+###### Monday 20, February 2023
+- [x] 
+
+#### Day Eleven
+
+###### Tuesday 21, February 2023
+- [x] 
+
+#### Day Twelve
+
+###### Wednesday 22, February 2023
+- [x] 
+
+
+#### Day Thirteen
+
+###### Thursday 23, February 2023
+- [x] 
+
+
+#### Day Fourteen
+
+###### Friday 24, February 2023
+- [x] 
 
 
 
