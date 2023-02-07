@@ -80,7 +80,7 @@ ojo
 
 
 <!-- ojo translate -->
-Estas son las directrices para el proyecto final de Vue.js:
+<!-- Estas son las directrices para el proyecto final de Vue.js:
 
 - Creación de cuenta: los usuarios podrán registrarse en la aplicación mediante un proceso de Sign Up, iniciar sesión con Log In y cerrar sesión con Log Out.
 Gestión de tareas: los usuarios podrán crear, editar, marcar como completadas o desmarcar, y eliminar tareas.
@@ -91,7 +91,7 @@ Gestión del estado: se usarán las stores de Pinia para conectarse con el backe
 - Responsive design: la página será responsive y tendrá al menos dos versiones: mobile y desktop.
 - Despliegue: la aplicación será desplegada en Vercel.
 - Manejo de operaciones asíncronas: las operaciones asíncronas se manejarán correctamente con promises o async/await.
-- Documentación: se mantendrá una ruta de trabajo en el readme del repositorio, actualizándolo diariamente.
+- Documentación: se mantendrá una ruta de trabajo en el readme del repositorio, actualizándolo diariamente. -->
 
 
 I have applied the Creative Commons License for this project. 
@@ -203,10 +203,10 @@ This project was built with vue.js.....
 Ikerne - [https://www.linkedin.com/in/ikernesg/](https://www.linkedin.com/in/ikernesg/) - ikernesanz@gmail.com
 
 <!-- ojo change links this are from the midterm -->
-Project Links: [https://midterm-ironhack-4d5i2r2pt-ikerne.vercel.app/](https://midterm-ironhack-4d5i2r2pt-ikerne.vercel.app/)
+<!-- Project Links: [https://midterm-ironhack-4d5i2r2pt-ikerne.vercel.app/](https://midterm-ironhack-4d5i2r2pt-ikerne.vercel.app/)
               & [https://github.com/Ikerne/midterm-ironhack](https://github.com/Ikerne/midterm-ironhack)  
 
-Presentation Link: [https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-GV33y0MsDX1cV2_IcLf5C8I/edit#slide=id.p](https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-GV33y0MsDX1cV2_IcLf5C8I/edit#slide=id.p) 
+Presentation Link: [https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-GV33y0MsDX1cV2_IcLf5C8I/edit#slide=id.p](https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-GV33y0MsDX1cV2_IcLf5C8I/edit#slide=id.p)  -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -214,7 +214,7 @@ Presentation Link: [https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-
 
 ## Acknowledgment
 <!-- ojo translate -->
-Queremos agradecer a los tres profesores de este bootcamp en Ironhack; Diego Zito, Jarko Garrido y Aleix Abuli. Gracias por su tiempo, toda la información brindada, su paciencia y las horas extra para ayudarnos a solventar todo tipo de dudas. También, al SOC por facilitarnos este curso de modo que podamos seguir formándonos profesionalmente. 
+<!-- Queremos agradecer a los tres profesores de este bootcamp en Ironhack; Diego Zito, Jarko Garrido y Aleix Abuli. Gracias por su tiempo, toda la información brindada, su paciencia y las horas extra para ayudarnos a solventar todo tipo de dudas. También, al SOC por facilitarnos este curso de modo que podamos seguir formándonos profesionalmente.  -->
 
 
 
