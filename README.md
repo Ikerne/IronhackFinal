@@ -83,7 +83,7 @@ ojo
 <!-- Estas son las directrices para el proyecto final de Vue.js:
 
 - Creación de cuenta: los usuarios podrán registrarse en la aplicación mediante un proceso de Sign Up, iniciar sesión con Log In y cerrar sesión con Log Out.
-Gestión de tareas: los usuarios podrán crear, editar, marcar como completadas o desmarcar, y eliminar tareas.
+-Gestión de tareas: los usuarios podrán crear, editar, marcar como completadas o desmarcar, y eliminar tareas.
 - Almacenamiento de datos: la aplicación estará conectada a Supabase y se guardará toda la información de las tareas y usuarios en esa plataforma.
 Gestión del estado: se usarán las stores de Pinia para conectarse con el backend y controlar el estado de la aplicación.
 - Navegación: se utilizará Vue Router para navegar por la página sin tener que hacer un refresh.
@@ -131,17 +131,17 @@ This project was built with vue.js.....
 - [x] Sign Up
 - [x] Sign In
 - [x] Sign Out
-- [ ] Create Task
-- [ ] Read Task
-- [ ] Update Task
-- [ ] Delete Task
+
 
 
 
 #### Day Three
 
 ###### Thursday 09, February 2023
-- [ ] task
+- [ ] Create Task
+- [ ] Read Task
+- [ ] Update Task
+- [ ] Delete Task
 
 #### Day Four
 

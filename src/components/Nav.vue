@@ -18,7 +18,7 @@
     <div>
       <ul>
         <li class="log-out-welcome">
-          <p>Welcome, user</p>
+          <p>Welcome, {{userName}}</p>
         </li>
         <li>
           <button @click="signOut" class="button">Log out</button>
@@ -31,14 +31,14 @@
 <script setup>
 // import PersonalRouter from "./PersonalRouter.vue";
 import { useUserStore } from "../stores/user";
-import { computed } from "vue";
+import { computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { ref } from 'vue';
 
 //constant to save a variable that will hold the use router method
 const route = "/";
 const buttonText = "Todo app";
-
+const userName = ref("");
 // constant to save a variable that will get the user from store with a computed function imported from vue
 // const getUser = computed(() => useUserStore().user);
 const getUser = computed (() => useUserStore().user)
@@ -47,7 +47,7 @@ const getUser = computed (() => useUserStore().user)
 const userEmail = ref("");
 async function getEmail() {
   await useUserStore().fetchUser();
-  userEmail.value = useUserStore.user.email;
+  userEmail.value = useUserStore().user.email;
 }
 getEmail();
 // getUser.email;
@@ -62,9 +62,17 @@ const signOut = async () => {
     await useUserStore().signOut();
     // then redirect user to the homeView
     redirect.push({ path: "/auth/login"});
-  } catch (error) {}
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
 };
 
+onMounted(()=> {
+  useUserStore().fetchUser();
+   userName.value= useUserStore().profile.userNames;
+console.log(useUserStore().user);
+ })
 </script>
 
 <style>
