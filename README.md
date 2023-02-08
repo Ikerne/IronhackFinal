@@ -127,7 +127,8 @@ This project was built with vue.js.....
 #### Day Two
 
 ###### Wednesday  08, February 2023
-- [ ] task
+- [ ] Sign In
+- [ ] Sign Up
 
 #### Day Three
 
