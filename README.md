@@ -127,8 +127,16 @@ This project was built with vue.js.....
 #### Day Two
 
 ###### Wednesday  08, February 2023
-- [ ] Sign In
-- [ ] Sign Up
+- [x] supabase profiles table <!--ojo needs more columns-->
+- [x] Sign Up
+- [x] Sign In
+- [x] Sign Out
+- [ ] Create Task
+- [ ] Read Task
+- [ ] Update Task
+- [ ] Delete Task
+
+
 
 #### Day Three
 
