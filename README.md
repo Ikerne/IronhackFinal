@@ -132,9 +132,6 @@ This project was built with vue.js.....
 - [x] Sign In
 - [x] Sign Out
 
-
-
-
 #### Day Three
 
 ###### Thursday 09, February 2023
