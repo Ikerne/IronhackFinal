@@ -40,7 +40,7 @@ onUpdated(()=> {
 // const miCoolFunction = (miInfoRecibidaEjemplo) => {
 //   alert(`Hola ${miInfoRecibidaEjemplo}`);
 //  };
-
+// deletetask constant for deleteEmit
 const deleteTask = ()=>{
   
 console.log("testinggg");
