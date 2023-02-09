@@ -2,6 +2,7 @@
 <div class="container">
     <h3>{{task.title}}</h3>
     <button @click="deleteTask">Delete</button>
+    <!-- <button @click="testFunction">test emit</button> -->
 </div>
 </template>
 
@@ -17,9 +18,18 @@ const props = defineProps({
 });
 
 // Función para borrar la tarea a través de la store. El problema que tendremos aquí (y en NewTask.vue) es que cuando modifiquemos la base de datos los cambios no se verán reflejados en el v-for de Home.vue porque no estamos modificando la variable tasks guardada en Home. Usad el emit para cambiar esto y evitar ningún page refresh.
+const emit = defineEmits(["deleteEmit", "testEmit"])
+
+// const testFunction = () => {
+//     emit("testEmit", )
+// }
+
+
 const deleteTask = async() => {
     await taskStore.deleteTask(props.task.id);
-    console.log("test");
+    // console.log("test");
+    alert(`Your task ${props.task.title} was deleted`)
+    emit("deleteEmit")
 };
 
 </script>

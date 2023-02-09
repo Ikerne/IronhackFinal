@@ -113,7 +113,8 @@ This project was built with vue.js.....
 ## Roadmap
 
 #### Backlog
-- [ ] task
+- [ ] check columns needed for profiles table
+- [ ] try to add priority to tasks
 
 #### Day One
 
@@ -138,7 +139,7 @@ This project was built with vue.js.....
 - [x] Create Task
 - [x] Read Task
 - [ ] Update Task
-- [ ] Delete Task
+- [x] Delete Task
 
 #### Day Four
 
