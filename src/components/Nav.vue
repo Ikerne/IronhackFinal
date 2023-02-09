@@ -70,7 +70,7 @@ const signOut = async () => {
 
 onMounted(()=> {
   useUserStore().fetchUser();
-   userName.value= useUserStore().profile.userNames;
+   userName.value= useUserStore().profile.username;
 console.log(useUserStore().user);
  })
 </script>
