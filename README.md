@@ -135,8 +135,8 @@ This project was built with vue.js.....
 #### Day Three
 
 ###### Thursday 09, February 2023
-- [ ] Create Task
-- [ ] Read Task
+- [x] Create Task
+- [x] Read Task
 - [ ] Update Task
 - [ ] Delete Task
 
