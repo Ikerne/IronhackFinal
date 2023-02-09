@@ -10,7 +10,7 @@
     <h1>Tasks:</h1>
     <TaskItem v-for="task in tasks" :key="task.id" :task="task" />
   </div>
-  <p v-for="task in taskStore.tasksArr" :key="task.id">{{ task }}</p>
+  <!-- <p v-for="task in taskStore.tasksArr" :key="task.id">{{ task }}</p> -->
 </template>
 
 <script setup>
@@ -30,11 +30,11 @@ const tasks = ref([]);
 const getTasks = async () => {
   tasks.value = await taskStore.fetchTasks()
 };
-
 getTasks();
-// onUpdated(()=> {
-//   getTasks()
-// });
+
+onUpdated(()=> {
+  getTasks()
+ });
 
 const miCoolFunction = (miInfoRecibidaEjemplo) => {
   alert(`Hola ${miInfoRecibidaEjemplo}`);
@@ -47,7 +47,7 @@ const addTaskSupabase = (newTask) => {
  let newTaskTitle = newTask.title;
  let newTaskDescription = newTask.description;
  taskStore.addTask(newTaskTitle, newTaskDescription)
- getTasks();
+//  getTasks();
  console.log("click");
 };
 </script>
