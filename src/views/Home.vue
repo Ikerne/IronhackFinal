@@ -28,13 +28,13 @@ const tasks = ref([]);
 
 // Creamos una función que conecte a la store para conseguir las tareas de supabase
 const getTasks = async () => {
-  tasks.value = await taskStore.fetchTasks();
+  tasks.value = await taskStore.fetchTasks()
 };
 
 getTasks();
-onUpdated(()=> {
-  getTasks()
-});
+// onUpdated(()=> {
+//   getTasks()
+// });
 
 const miCoolFunction = (miInfoRecibidaEjemplo) => {
   alert(`Hola ${miInfoRecibidaEjemplo}`);
@@ -48,7 +48,7 @@ const addTaskSupabase = (newTask) => {
  let newTaskDescription = newTask.description;
 
 taskStore.addTask(newTaskTitle, newTaskDescription)
-
+getTasks();
 
   console.log("click");
 };
