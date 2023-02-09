@@ -46,11 +46,9 @@ const addTaskSupabase = (newTask) => {
  // variables para guardar cara clave/key+valor del objeto del emit dentro se su variable correspondiente para poder pasarle segun la logica de la funcion que se conecta con la base de datos en la tienda de task.js con nombre addTask
  let newTaskTitle = newTask.title;
  let newTaskDescription = newTask.description;
-
-taskStore.addTask(newTaskTitle, newTaskDescription)
-getTasks();
-
-  console.log("click");
+ taskStore.addTask(newTaskTitle, newTaskDescription)
+ getTasks();
+ console.log("click");
 };
 </script>
 
