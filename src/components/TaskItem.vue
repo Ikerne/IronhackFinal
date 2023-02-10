@@ -5,13 +5,16 @@
     <button @click="deleteTask">Delete</button>
     <button @click="completeTask">Completed</button>
     <!-- <button @click="testFunction">test emit</button> -->
-    <button @click="showUpdateform = true">Modify Task</button>
-    <div v-if="showUpdateform">
-        <div class="input-field">
-            <input type="text" placeholder="Change Task Title" v-model="name">
+    <button @click="showUpdateForm = true">Modify Task</button>
+    <div v-if="showUpdateForm">
+        <div v-if="showErrorMessage">
+            <p class="error-text">{{ errorMessage }}</p>
         </div>
         <div class="input-field">
-            <input type="text" placeholder="Change Task Description" v-model="description" @keypress.enter="updateTask">
+            <input type="text" placeholder="Change Task Title" v-model="newName">
+        </div>
+        <div class="input-field">
+            <input type="text" placeholder="Change Task Description" v-model="newDescription" @keypress.enter="updateTask">
         </div>
         <button @click="updateTask" class="button">send Modify</button>
         <br>
@@ -26,19 +29,20 @@ import { supabase } from '../supabase';
 
 const taskStore = useTaskStore();
 const isComplete = ref(props.task.is_complete);
-
+const showUpdateForm = ref(false);
 const props = defineProps({
     task: Object,
 });
 //variables para mostrar error si no hay info en los inputs al modificar la task
-// const errorMessage = ref(null);
-// const showErrorMessage = ref(false);
+const errorMessage = ref(null);
+const showErrorMessage = ref(false);
 // variables para los valors de los inputs
-// const name = ref('');
-// const description = ref('');
+const newName = ref('');
+const newDescription = ref('');
+
 
 // Función para borrar la tarea a través de la store. El problema que tendremos aquí (y en NewTask.vue) es que cuando modifiquemos la base de datos los cambios no se verán reflejados en el v-for de Home.vue porque no estamos modificando la variable tasks guardada en Home. Usad el emit para cambiar esto y evitar ningún page refresh.
-const emit = defineEmits(["deleteEmit", "testEmit", "modifyEmit"])
+const emit = defineEmits(["deleteEmit", "testEmit", "updateEmit"])
 
 // const testFunction = () => {
 //     emit("testEmit", )
@@ -59,9 +63,37 @@ const completeTask = () => {
     taskStore.toggleTask(isComplete.value, props.task.id);
 };
 
-const updateTask = async() => {
-   await taskStore.updateTask("prssssops.task.title", "description", props.task.id);
-    };
+//new test
+const updateTask = () => {
+    if(newName.value.length === 0 || newDescription.value.length === 0){
+    // Primero comprobamos que ningún campo del input esté vacío y lanzamos el error con un timeout para informar al user.
+    showErrorMessage.value = true;
+    errorMessage.value = 'The task title or description is empty';
+    setTimeout(() => {
+    showErrorMessage.value = false;
+    }, 5000);
+
+} else {
+    const newUpdate = {
+        title: newName.value,
+        description: newDescription.value,
+        id: props.task.id
+    }
+    emit("updateEmit", newUpdate);
+    newName.value = ""
+    newDescription.value = ""
+    console.log("¨test update");
+
+}
+setTimeout(() => {
+ showUpdateForm.value = false;
+}, 5000);
+};
+
+// jarko approach
+// const updateTask = async() => {
+//    await taskStore.updateTask("prssssops.task.title", "description", props.task.id);
+//     };
 
 </script>
 

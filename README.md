@@ -112,7 +112,7 @@ This project was built with vue.js.....
 
 ## Roadmap
 
-Note: From monday 13 to friday 17 most of my time will be dedicated to a 
+Note: From monday 13 to friday 17 most of my time will be dedicated to a labour risk course. That week was added to the road map in case I'm able to work on the project during that week. 
 
 #### Backlog
 - [ ] check columns needed for profiles table
@@ -147,8 +147,8 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to a
 
 ###### Friday 10, February 2023
 
-- [x] Completed Task functionality
-- [ ] Update Task
+- [x] Completed Task 
+- [x] Update Task
 
 
 #### Day Five
