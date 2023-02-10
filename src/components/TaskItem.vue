@@ -5,7 +5,17 @@
     <button @click="deleteTask">Delete</button>
     <button @click="completeTask">Completed</button>
     <!-- <button @click="testFunction">test emit</button> -->
-    <button @click="updateTask">Modify</button>
+    <button @click="showUpdateform = true">Modify Task</button>
+    <div v-if="showUpdateform">
+        <div class="input-field">
+            <input type="text" placeholder="Change Task Title" v-model="name">
+        </div>
+        <div class="input-field">
+            <input type="text" placeholder="Change Task Description" v-model="description" @keypress.enter="updateTask">
+        </div>
+        <button @click="updateTask" class="button">send Modify</button>
+        <br>
+    </div>
 </div>
 </template>
 
