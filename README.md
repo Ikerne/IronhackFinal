@@ -1,19 +1,3 @@
-<!-- Cheat Sheet -->
-## Cheat Sheet
-Check git satus:
-git status
-
-
-Shortcut to add changes to GitHub
-git add . && git commit -m " " && git push
-
-Launch host app
-npm run dev
-
-notes left by me for me can be found by searching for ojo with cmd+f
-ojo
-
-
 <!-- Structure -->
 <!--
 *** Estoy usando enlaces de estilo "referencia" de markdown para la legibilidad.
@@ -241,3 +225,17 @@ Presentation Link: [https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-
 ## Big Mistake
 
 
+<!-- Cheat Sheet -->
+## Cheat Sheet
+Check git satus:
+git status
+
+
+Shortcut to add changes to GitHub
+git add . && git commit -m " " && git push
+
+Launch host app
+npm run dev
+
+notes left by me for me can be found by searching for ojo with cmd+f
+ojo
