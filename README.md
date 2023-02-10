@@ -5,7 +5,7 @@ git status
 
 
 Shortcut to add changes to GitHub
-git add . && git commit -m " " && git push origin master 
+git add . && git commit -m " " && git push
 
 Launch host app
 npm run dev
