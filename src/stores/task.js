@@ -25,6 +25,7 @@ export const useTaskStore = defineStore("tasks", () => {
         title: title,
         is_complete: false,
         description: description,
+        // task_state: , => left uncompleted ojo! 
       },
     ]);
   };

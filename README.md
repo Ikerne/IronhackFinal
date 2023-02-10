@@ -64,14 +64,14 @@
 Here are the guidelines for the final Vue.js project:
 
 - [x] Creation of account: users will be able to register in the application through a Sign Up process, log in with Log In and log out with Log Out.
--[] Task management: users will be able to create, edit, mark as completed or unmark, and delete tasks.
+-[x] Task management: users will be able to create, edit, mark/unmark as completed and delete tasks.
 - [x] Data storage: the application will be connected to Supabase and all the information of the tasks and users will be saved on that platform.
-- [] State management: Pinia stores will be used to connect with the backend and control the state of the application.
-- [] Navigation: Vue Router will be used to navigate the page without having to do a refresh.
+- [x] State management: Pinia stores will be used to connect with the backend and control the state of the application.
+- [x] Navigation: Vue Router will be used to navigate the page without having to do a refresh.
 - [] Single Style: A single style file (assets/style.css) will be created and correctly inserted into main.js to access the classes and component ids.
 - [] Responsive design: the page will be responsive and will have at least two versions: mobile and desktop.
-- [] Deployment: the application will be deployed in Vercel.
-- [] Handling of asynchronous operations: asynchronous operations will be handled correctly with promises or async/await.
+- [x] Deployment: the application will be deployed in Vercel.
+- [x] Handling of asynchronous operations: asynchronous operations will be handled correctly with promises or async/await.
 - [] Documentation: a work path will be maintained in the repository's readme, updating it daily.
 
 
@@ -93,7 +93,7 @@ This project was built with vue.js.....
 
 ## Roadmap
 
-Note: From monday 13 to friday 17 most of my time will be dedicated to a labour risk course. That week was added to the road map in case I'm able to work on the project during that week. 
+Note: From monday 13 to friday 17 most of my time will be dedicated to an occupational hazard course. Less time will be spent working on the project during said week.
 
 #### Backlog
 
@@ -109,7 +109,7 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to a labour 
 #### Day Two
 
 ###### Wednesday  08, February 2023
-- [x] supabase profiles table <!--ojo needs more columns-->
+- [x] supabase profiles table 
 - [x] Sign Up
 - [x] Sign In
 - [x] Sign Out
@@ -133,7 +133,7 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to a labour 
 
 ###### Monday 13, February 2023
 - [ ] Delete & update Task cancelEmit
-- [ ] Profiles-  check columns needed for profiles table or solve profile/account page with split method maybe? avatar/profile image
+- [ ] Profiles- avatar/profile image
 - [ ] readme improvement & code cleanup
 
 

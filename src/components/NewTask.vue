@@ -10,6 +10,14 @@
         <div class="input-field">
             <input type="text" placeholder="Add a Task Description - Look up Kendrick Lamar's FEAR album on spotify and listen to the whole album." v-model="description" @keypress.enter="addTask">
         </div>
+        <div class="dropdown-field"> <!--ojo uncompleted extra functionality more work needed, this is to choose a task state this could also be changed to priority food for thought-->
+            <label for="taskState">Choose task state:</label>
+            <select name="task-state" id="task-state">
+                <option value="toDo" selected>To Do</option>
+                <option value="started">Started</option>
+                <option value="ToDo">Backlog</option>
+            </select>
+        </div>
         <button @click="addTask" class="button">Add</button>
         <br>
         <!-- <button @click="testFunction">test emit</button> -->
