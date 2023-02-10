@@ -48,7 +48,7 @@ console.log("testinggg");
 
 const updateTask = ()=>{
   
-  console.log("ttesting midify");
+  console.log("testing modify");
   }
 // function to send tasks to supabase
 const addTaskSupabase = (newTask) => {
@@ -59,7 +59,7 @@ const addTaskSupabase = (newTask) => {
  let newTaskDescription = newTask.description;
  taskStore.addTask(newTaskTitle, newTaskDescription)
 //  getTasks();
- console.log("click");
+//  console.log("click");
 };
 </script>
 

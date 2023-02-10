@@ -21,11 +21,11 @@ const props = defineProps({
     task: Object,
 });
 //variables para mostrar error si no hay info en los inputs al modificar la task
-const errorMessage = ref(null);
-const showErrorMessage = ref(false);
+// const errorMessage = ref(null);
+// const showErrorMessage = ref(false);
 // variables para los valors de los inputs
-const name = ref('');
-const description = ref('');
+// const name = ref('');
+// const description = ref('');
 
 // Función para borrar la tarea a través de la store. El problema que tendremos aquí (y en NewTask.vue) es que cuando modifiquemos la base de datos los cambios no se verán reflejados en el v-for de Home.vue porque no estamos modificando la variable tasks guardada en Home. Usad el emit para cambiar esto y evitar ningún page refresh.
 const emit = defineEmits(["deleteEmit", "testEmit", "modifyEmit"])
@@ -49,11 +49,9 @@ const completeTask = () => {
     taskStore.toggleTask(isComplete.value, props.task.id);
 };
 
-// const updateTask = async() => {
-//    await taskStore.updateTask(props.task.title);
-    
-//     }
-// };
+const updateTask = async() => {
+   await taskStore.updateTask("prssssops.task.title", "description", props.task.id);
+    };
 
 </script>
 
