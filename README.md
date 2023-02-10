@@ -1,8 +1,7 @@
 <!-- Structure -->
-<!--
-*** Estoy usando enlaces de estilo "referencia" de markdown para la legibilidad.
-*** Los enlaces de referencia están encerrados en corchetes [ ] en lugar de paréntesis ( ).
-*** Vea la parte inferior de este documento para la declaración de las variables de referencia
+<!--I'm using markdown "reference" style links for readability.
+*** Reference links are enclosed in square brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of reference variables
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
@@ -62,20 +61,18 @@
 
 <img src="./resources/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
 
+Here are the guidelines for the final Vue.js project:
 
-<!-- ojo translate -->
-<!-- Estas son las directrices para el proyecto final de Vue.js:
-
-- Creación de cuenta: los usuarios podrán registrarse en la aplicación mediante un proceso de Sign Up, iniciar sesión con Log In y cerrar sesión con Log Out.
--Gestión de tareas: los usuarios podrán crear, editar, marcar como completadas o desmarcar, y eliminar tareas.
-- Almacenamiento de datos: la aplicación estará conectada a Supabase y se guardará toda la información de las tareas y usuarios en esa plataforma.
-Gestión del estado: se usarán las stores de Pinia para conectarse con el backend y controlar el estado de la aplicación.
-- Navegación: se utilizará Vue Router para navegar por la página sin tener que hacer un refresh.
-- Estilo único: se creará un solo archivo de estilo (assets/style.css) y se insertará correctamente en main.js para tener acceso a las clases y los ids de los componentes.
-- Responsive design: la página será responsive y tendrá al menos dos versiones: mobile y desktop.
-- Despliegue: la aplicación será desplegada en Vercel.
-- Manejo de operaciones asíncronas: las operaciones asíncronas se manejarán correctamente con promises o async/await.
-- Documentación: se mantendrá una ruta de trabajo en el readme del repositorio, actualizándolo diariamente. -->
+- [x] Creation of account: users will be able to register in the application through a Sign Up process, log in with Log In and log out with Log Out.
+-[] Task management: users will be able to create, edit, mark as completed or unmark, and delete tasks.
+- [x] Data storage: the application will be connected to Supabase and all the information of the tasks and users will be saved on that platform.
+- [] State management: Pinia stores will be used to connect with the backend and control the state of the application.
+- [] Navigation: Vue Router will be used to navigate the page without having to do a refresh.
+- [] Single Style: A single style file (assets/style.css) will be created and correctly inserted into main.js to access the classes and component ids.
+- [] Responsive design: the page will be responsive and will have at least two versions: mobile and desktop.
+- [] Deployment: the application will be deployed in Vercel.
+- [] Handling of asynchronous operations: asynchronous operations will be handled correctly with promises or async/await.
+- [] Documentation: a work path will be maintained in the repository's readme, updating it daily.
 
 
 I have applied the Creative Commons License for this project. 
