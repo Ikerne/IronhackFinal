@@ -1,8 +1,9 @@
 <template>
 <div class="container">
-    <h3>{{task.title}}</h3>
-    <p>{{ task.description }}</p>
+    <h3 :class="{completed: isComplete}">{{task.title}}</h3>
+    <p :class="{completed: isComplete}">{{ task.description }}</p>
     <button @click="deleteTask">Delete</button>
+    <button @click="completeTask">Completed</button>
     <!-- <button @click="testFunction">test emit</button> -->
     <button @click="updateTask">Modify</button>
 </div>
@@ -14,6 +15,7 @@ import { useTaskStore } from '../stores/task';
 import { supabase } from '../supabase';
 
 const taskStore = useTaskStore();
+const isComplete = ref(props.task.is_complete);
 
 const props = defineProps({
     task: Object,
@@ -40,6 +42,13 @@ const deleteTask = async() => {
     emit("deleteEmit")
 };
 
+const completeTask = () => {
+    //When called it should modify the style of h3 & p.
+    isComplete.value = !isComplete.value;
+    //it communicates to supabase, to set the state of the task as completed/not completed
+    taskStore.toggleTask(isComplete.value, props.task.id);
+};
+
 // const updateTask = async() => {
 //    await taskStore.updateTask(props.task.title);
     
@@ -48,7 +57,11 @@ const deleteTask = async() => {
 
 </script>
 
-<style></style>
+<style>
+.completed {
+    background-color: aquamarine;
+}
+</style>
 
 <!--
 **Hints**

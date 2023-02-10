@@ -112,6 +112,8 @@ This project was built with vue.js.....
 
 ## Roadmap
 
+Note: From monday 13 to friday 17 most of my time will be dedicated to a 
+
 #### Backlog
 - [ ] check columns needed for profiles table
 - [ ] try to add priority to tasks

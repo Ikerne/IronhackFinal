@@ -27,13 +27,27 @@ export const useTaskStore = defineStore("tasks", () => {
       },
     ]);
   };
+//complketed? 
+const toggleTask = async(isComplete, id) => {
+  //check it works
+ // console.log("????");
+  // const {data, error} = await supabase.from("tasks")
+ const { data, error } = await supabase.from("tasks").update({is_complete: isComplete }).match({
+      id: id,
+    });
+
+  // const {data, error} = await supabase.from("tasks")
+  // .update({isComplete: isComplete}).match({id: id,});
+}
+
+
   // borrar tareas de supabase
   const deleteTask = async (id) => {
     const { data, error } = await supabase.from("tasks").delete().match({
       id: id,
     });
   };
-  return { tasksArr, fetchTasks, addTask, deleteTask };
+  return { tasksArr, fetchTasks, addTask, deleteTask, toggleTask };
 });
   // modificar tareas de supabase
   // const updateTask = async (title, description) => {
