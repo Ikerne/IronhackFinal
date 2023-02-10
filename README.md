@@ -13,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://media.giphy.com/media/znlSLQEFWmxI3XO9zP/giphy.gif" alt="Logo" width="120" height="120"> <!--ojo-->
+  <img src="https://media.giphy.com/media/znlSLQEFWmxI3XO9zP/giphy.gif" alt="Logo" width="100" height="100"> <!--ojo-->
   <h3 align="center">Task App</h3>
   <a href="#PutVercelLinkHere">Visit Website</a> <!--ojo-->
 </div>
