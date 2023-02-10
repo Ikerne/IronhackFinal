@@ -117,7 +117,7 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to a labour 
 #### Backlog
 - [ ] check columns needed for profiles table
 - [ ] try to add priority to tasks
-- [ ] Delete Task cancelEmit
+- [ ] Delete & update Task cancelEmit
 
 #### Day One
 
