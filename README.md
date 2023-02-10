@@ -138,13 +138,14 @@ This project was built with vue.js.....
 ###### Thursday 09, February 2023
 - [x] Create Task
 - [x] Read Task
-- [ ] Update Task
-- [x] Delete Task
+- [x] Delete Task deleteEmit
 
 #### Day Four
 
 ###### Friday 10, February 2023
-- [ ] task
+- [x] Delete Task cancelEmit
+- [ ] Update Task
+
 
 #### Day Five
 

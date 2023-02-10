@@ -8,7 +8,7 @@
     </div>
     <NewTask  @new-task-emit="addTaskSupabase" />
     <h1>Tasks:</h1>
-    <TaskItem @delete-emit="deleteTask" v-for="task in tasks" :key="task.id" :task="task" />
+    <TaskItem @delete-emit="deleteTask" @modify-emit="updateTask" v-for="task in tasks" :key="task.id" :task="task" />
   </div>
   <!-- <p v-for="task in taskStore.tasksArr" :key="task.id">{{ task }}</p> -->
 </template>
@@ -45,6 +45,11 @@ const deleteTask = ()=>{
   
 console.log("testinggg");
 }
+
+const updateTask = ()=>{
+  
+  console.log("ttesting midify");
+  }
 // function to send tasks to supabase
 const addTaskSupabase = (newTask) => {
   alert(`${newTask.title}
