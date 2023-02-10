@@ -117,6 +117,7 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to a
 #### Backlog
 - [ ] check columns needed for profiles table
 - [ ] try to add priority to tasks
+- [ ] Delete Task cancelEmit
 
 #### Day One
 
@@ -145,7 +146,8 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to a
 #### Day Four
 
 ###### Friday 10, February 2023
-- [x] Delete Task cancelEmit
+
+- [x] Completed Task functionality
 - [ ] Update Task
 
 
