@@ -115,9 +115,6 @@ This project was built with vue.js.....
 Note: From monday 13 to friday 17 most of my time will be dedicated to a labour risk course. That week was added to the road map in case I'm able to work on the project during that week. 
 
 #### Backlog
-- [ ] check columns needed for profiles table
-- [ ] try to add priority to tasks
-- [ ] Delete & update Task cancelEmit
 
 #### Day One
 
@@ -154,32 +151,36 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to a labour 
 #### Day Five
 
 ###### Monday 13, February 2023
-- [ ] task
+- [ ] Delete & update Task cancelEmit
+- [ ] Profiles-  check columns needed for profiles table or solve profile/account page with split method maybe? avatar/profile image
+- [ ] readme improvement & code cleanup
+
 
 #### Day Six
 
 ###### Tuesday 14, February 2023
-- [ ] task 
+- [ ] try to add priority to tasks
+- [ ]  Nav CSS
 
 #### Day Seven
 
 ###### Wednesday 15, February 2023
-- [ ] task
+- [ ] Sign In & Out CSS
 
 #### Day Eight
 
 ###### Thursday 16, February 2023
-- [ ] task
+- [ ] Home CSS - add new task form & modify form
 
 #### Day Nine
 
 ###### Friday 17, February 2023
-- [ ] task
+- [ ] Home CSS - tasks
 
 #### Day Ten
 
 ###### Monday 20, February 2023
-- [ ] task
+- [ ] Profile CSS 
 
 #### Day Eleven
 
