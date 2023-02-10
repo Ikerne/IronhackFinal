@@ -64,6 +64,7 @@
 Here are the guidelines for the final Vue.js project:
 
 - [x] Creation of account: users will be able to register in the application through a Sign Up process, log in with Log In and log out with Log Out.
+
 -[x] Task management: users will be able to create, edit, mark/unmark as completed and delete tasks.
 - [x] Data storage: the application will be connected to Supabase and all the information of the tasks and users will be saved on that platform.
 - [x] State management: Pinia stores will be used to connect with the backend and control the state of the application.
