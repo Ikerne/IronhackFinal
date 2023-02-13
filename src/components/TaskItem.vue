@@ -1,7 +1,8 @@
 <template>
 <div class="container">
-    <h3 :class="{completed: isComplete}">{{task.title}}</h3>
-    <p :class="{completed: isComplete}">{{ task.description }}</p>
+    <h3 :class="{completed: isComplete}">Task title: {{task.title}}</h3>
+    <p :class="{completed: isComplete}">Task description: {{ task.description }}</p>
+    <p :class="{completed: isComplete}">Task priority: {{ task.task_priority }}</p>
     <button @click="deleteTask">Delete</button>
     <button @click="completeTask">Completed</button>
     <!-- <button @click="testFunction">test emit</button> -->
@@ -16,6 +17,15 @@
         <div class="input-field">
             <input type="text" placeholder="Change Task Description" v-model="newDescription" @keypress.enter="updateTask">
         </div>
+        <div class="dropdown-field"> <!--ojo uncompleted extra functionality more work needed, this is to choose a task state this could also be changed to priority food for thought-->
+            <label for="taskPriority">Choose task priority:</label>
+            <select name="task-priority" id="task-priority" v-model="newPriority"  @keypress.enter="updateTask">
+                <option value="Urgent" >Urgent</option>
+                <option value="Normal" selected>Normal</option>
+                <option value="Low">Low</option>
+            </select>
+        </div>
+       
         <button @click="updateTask" class="button">send Modify</button>
         <br>
     </div>
@@ -39,6 +49,7 @@ const showErrorMessage = ref(false);
 // variables para los valors de los inputs
 const newName = ref('');
 const newDescription = ref('');
+const newPriority = ref('');
 
 
 // Función para borrar la tarea a través de la store. El problema que tendremos aquí (y en NewTask.vue) es que cuando modifiquemos la base de datos los cambios no se verán reflejados en el v-for de Home.vue porque no estamos modificando la variable tasks guardada en Home. Usad el emit para cambiar esto y evitar ningún page refresh.
@@ -65,7 +76,7 @@ const completeTask = () => {
 
 //new test
 const updateTask = () => {
-    if(newName.value.length === 0 || newDescription.value.length === 0){
+    if(newName.value.length === 0 || newDescription.value.length === 0 ){
     // Primero comprobamos que ningún campo del input esté vacío y lanzamos el error con un timeout para informar al user.
     showErrorMessage.value = true;
     errorMessage.value = 'The task title or description is empty';
@@ -77,11 +88,14 @@ const updateTask = () => {
     const newUpdate = {
         title: newName.value,
         description: newDescription.value,
-        id: props.task.id
+        task_priority: newPriority.value,
+        id: props.task.id,
+        
     }
     emit("updateEmit", newUpdate);
     newName.value = ""
     newDescription.value = ""
+    newPriority.value = ""
     console.log("¨test update");
 
 }

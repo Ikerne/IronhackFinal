@@ -96,6 +96,8 @@ This project was built with vue.js.....
 Note: From monday 13 to friday 17 most of my time will be dedicated to an occupational hazard course. Less time will be spent working on the project during said week.
 
 #### Backlog
+- [ ] README improvement
+- [ ] Code cleanup
 
 #### Day One
 
@@ -133,14 +135,15 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to an occupa
 
 ###### Monday 13, February 2023
 - [ ] Delete & update Task cancelEmit
+- [x] Profiles - handle, email, name on account page
 - [ ] Profiles- avatar/profile image
-- [ ] readme improvement & code cleanup
+- [ ] try to add priority to tasks
 
 
 #### Day Six
 
 ###### Tuesday 14, February 2023
-- [ ] try to add priority to tasks
+
 - [ ]  Nav CSS
 
 #### Day Seven

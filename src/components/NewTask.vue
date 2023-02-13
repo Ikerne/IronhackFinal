@@ -11,11 +11,11 @@
             <input type="text" placeholder="Add a Task Description - Look up Kendrick Lamar's FEAR album on spotify and listen to the whole album." v-model="description" @keypress.enter="addTask">
         </div>
         <div class="dropdown-field"> <!--ojo uncompleted extra functionality more work needed, this is to choose a task state this could also be changed to priority food for thought-->
-            <label for="taskState">Choose task state:</label>
-            <select name="task-state" id="task-state">
-                <option value="toDo" selected>To Do</option>
-                <option value="started">Started</option>
-                <option value="ToDo">Backlog</option>
+            <label for="taskPriority">Choose task priority:</label>
+            <select name="task-priority" id="task-priority" v-model="priority">
+                <option value="Urgent" >Urgent</option>
+                <option value="Normal" selected>Normal</option>
+                <option value="Low">Low</option>
             </select>
         </div>
         <button @click="addTask" class="button">Add</button>
@@ -52,9 +52,10 @@ const testFunction = () => {
 // var para guardar el uso de la ta tienda de tarea en este archivo.
 const taskStore = useTaskStore();
 
-// variables para los valors de los inputs
+// variables for the values of the inputs/dropdown
 const name = ref('');
 const description = ref('');
+const priority = ref('');
 
 // Arrow function para crear tareas.
 const addTask = () => {
@@ -69,12 +70,16 @@ if(name.value.length === 0 || description.value.length === 0){
 } else {
     const newTask = {
         title: name.value,
-        description: description.value
+        description: description.value,
+        task_priority: priority.value,
     }
+    console.log(newTask);
     emit("newTaskEmit", newTask);
     name.value = ""
     description.value = ""
-    console.log("¨test");
+    priority.value = ""
+
+    console.log(newTask);
 }
 };
 

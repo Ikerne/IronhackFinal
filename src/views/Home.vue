@@ -43,29 +43,30 @@ onUpdated(()=> {
 // deletetask constant for deleteEmit
 const deleteTask = ()=>{
   
-console.log("testinggg");
+// console.log("testinggg");
 }
 
 const updateTask = ()=>{
   
-  console.log("testing modify");
+  // console.log("testing modify");
   }
 // function to send tasks to supabase
 const addTaskSupabase = (newTask) => {
-  alert(`${newTask.title}
- ${newTask.title}`);
+  alert(`Your task with called: ${newTask.title} described as: 
+ ${newTask.title} has been added successfully `);
  // variables para guardar cara clave/key+valor del objeto del emit dentro se su variable correspondiente para poder pasarle segun la logica de la funcion que se conecta con la base de datos en la tienda de task.js con nombre addTask
  let newTaskTitle = newTask.title;
  let newTaskDescription = newTask.description;
- taskStore.addTask(newTaskTitle, newTaskDescription)
+ let newTaskPriority = newTask.task_priority;
+ taskStore.addTask(newTaskTitle, newTaskDescription, newTaskPriority)
 //  getTasks();
 //  console.log("click");
 };
 // function to send updated task to supabase
 const addUpdateTaskSupabase = (newUpdate) => {
   console.log(newUpdate);
-  alert(`${newUpdate.title} ${newUpdate.description}`);
-  taskStore.updateTask(newUpdate.title, newUpdate.description, newUpdate.id)
+  alert(`${newUpdate.title} ${newUpdate.description} ${newUpdate.task_priority}`);
+  taskStore.updateTask(newUpdate.title, newUpdate.description, newUpdate.task_priority, newUpdate.id )
   
 };
 </script>
