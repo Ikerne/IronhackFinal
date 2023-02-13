@@ -98,6 +98,8 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to an occupa
 #### Backlog
 - [ ] README improvement
 - [ ] Code cleanup
+- [ ] Delete & update Task cancelEmit
+- [ ] Profiles- avatar/profile image
 
 #### Day One
 
@@ -134,22 +136,20 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to an occupa
 #### Day Five
 
 ###### Monday 13, February 2023
-- [ ] Delete & update Task cancelEmit
 - [x] Profiles - handle, email, name on account page
-- [ ] Profiles- avatar/profile image
-- [ ] try to add priority to tasks
-
+- [x] Add priority to tasks
+- [ ]  Nav CSS
 
 #### Day Six
 
 ###### Tuesday 14, February 2023
+- [ ] Sign In & Out CSS
 
-- [ ]  Nav CSS
 
 #### Day Seven
 
 ###### Wednesday 15, February 2023
-- [ ] Sign In & Out CSS
+- [ ] Home CSS - add new task form & modify form
 
 #### Day Eight
 

@@ -26,7 +26,7 @@ export const useTaskStore = defineStore("tasks", () => {
         title: title,
         is_complete: false,
         description: description,
-        task_priority: task_priority
+        task_priority: task_priority,
       },
     ]);
   };
@@ -52,7 +52,7 @@ export const useTaskStore = defineStore("tasks", () => {
       .update({ 
         title: title, 
         description: description, 
-        task_priority: task_priority
+        task_priority: task_priority,
       })
       .match({
         id: id,

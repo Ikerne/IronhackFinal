@@ -1,21 +1,30 @@
-/* :root {
+:root {
     --colorWhite: #ffffff;
     --colorBlack: #000000;
     --colorRed: red;
+    --colorBlue: rgba(0, 0, 255, 0.808);
     --fontSize-sm: 16px;
     --fontFamily: 'Arial, Helvetica, sans-serif';
     --fontTitle: 'Arial';
     --fontBody: 'Helvetica';
-} */
+} 
 
 /* SignIn Component */
 
-/* h1 {
-    color: var(--colorRed);
-} */
+h3 {
+    color: var(--colorBlue);
+}
 
 /* SignUp Component */
 
-/* Home view */
+/* nav Component */
+ul li {
+    list-style: none;
+}
 
-/* Account View */
+/* Home view */
+h1 {
+    color: var(--colorBlue);
+}
+
+/* Account View

@@ -21,7 +21,7 @@
             <label for="taskPriority">Choose task priority:</label>
             <select name="task-priority" id="task-priority" v-model="newPriority"  @keypress.enter="updateTask">
                 <option value="Urgent" >Urgent</option>
-                <option value="Normal" selected>Normal</option>
+                <option value="Normal">Normal</option>
                 <option value="Low">Low</option>
             </select>
         </div>
