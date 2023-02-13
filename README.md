@@ -100,6 +100,7 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to an occupa
 - [ ] Code cleanup
 - [ ] Delete & update Task cancelEmit
 - [ ] Profiles- avatar/profile image
+- [ ] Ask if updateTasks can be for any task parameter and not all every time
 
 #### Day One
 

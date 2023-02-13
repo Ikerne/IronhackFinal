@@ -52,8 +52,8 @@ const updateTask = ()=>{
   }
 // function to send tasks to supabase
 const addTaskSupabase = (newTask) => {
-  alert(`Your task with called: ${newTask.title} described as: 
- ${newTask.title} has been added successfully `);
+  alert(`Your task called: ${newTask.title} described as: 
+ ${newTask.description} has been added successfully `);
  // variables para guardar cara clave/key+valor del objeto del emit dentro se su variable correspondiente para poder pasarle segun la logica de la funcion que se conecta con la base de datos en la tienda de task.js con nombre addTask
  let newTaskTitle = newTask.title;
  let newTaskDescription = newTask.description;
