@@ -80,6 +80,7 @@ I have applied the Creative Commons License for this project.
 
 Resources:
      <p align="left"><a href="https://dev.to/thormeier/fully-responsive-html-css-sticky-note-4okl">Sticky Note CSS</a></p>
+    <p align="left"><a href="https://colorhunt.co/collection">Color Palette</a></p>
     <p align="left"><a href="#link">text</a></p>
 
 
