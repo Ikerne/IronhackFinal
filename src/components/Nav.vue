@@ -1,15 +1,14 @@
 <template>
   <nav>
     <!-- <PersonalRouter :route="route" :buttonText="buttonText" class="logo-link"/> -->
-    <router-link to="/"> Home </router-link>
+    <router-link class="nav-link" to="/"> Home </router-link>
 
     <ul>
       <li>
-        <router-link to="/">Task Manager</router-link>
+        <router-link class="nav-link" to="/taskManager">Task Manager</router-link>
       </li>
-
       <li>
-        <router-link to="/account">Your Account</router-link>
+        <router-link class="nav-link" to="/account">Your Account</router-link>
       </li>
     </ul>
 
@@ -73,24 +72,4 @@ const signOut = async () => {
 // });
 </script>
 
-<style>
-.navbar-img {
-  width: 90px;
-}
-
-nav {
-  background-color: lightgray;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-}
-
-nav ul {
-  list-style: none;
-  padding-inline-start: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-</style>
+<style></style>

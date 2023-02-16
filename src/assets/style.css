@@ -2,29 +2,114 @@
     --colorWhite: #ffffff;
     --colorBlack: #000000;
     --colorRed: red;
-    --colorBlue: rgba(0, 0, 255, 0.808);
+    --colorBlue: #9ADCFF;
+    --colorYellow: #FFF89A;
+    --colorOrange: #FFB2A6;
+    --colorPink: #FF8AAE;
+    --colorGray: #888787;
     --fontSize-sm: 16px;
-    --fontFamily: 'Arial, Helvetica, sans-serif';
-    --fontTitle: 'Arial';
-    --fontBody: 'Helvetica';
-} 
+    --fontFamily: 'Open Sans', sans-serif;
+    --fontTitle: 'Open Sans', sans-serif;
+    --fontBody: 'Open Sans', sans-serif;
 
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 16px;
+}
+body {
+    font-family: var(--fontFamily);
+    color: var(--colorBlack);
+    width:100%;
+    padding-right: 10px;
+    
+}
+button {
+    background-color: var(--colorWhite);
+    color:var(--colorBlack);
+    border: 1px solid var(--colorGray);
+    border-radius: 4px;
+    padding: 1px 3px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px var(--colorGray);
+    transition: all 0.3s ease-in-out;
+    font-family: var(--fontFamily);
+    font-weight:500;
+}
+button:hover{
+    transform: translateY(-1px);
+    box-shadow: 0px 2px 2px var(--colorGray);
+}
+button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
 /* SignIn Component */
 
 h3 {
-    color: var(--colorBlue);
+    color: var(--colorBlack);
+    font-family: var(--fontFamily);
 }
 
 /* SignUp Component */
 
 /* nav Component */
-ul li {
+nav {
+    background-color: var(--colorBlue);
+    color: var(--colorwhite);
+    height: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--fontFamily);
+    padding: 0 10px 0 10px;
+    margin: 5px 5px 5px 5px;
+
+
+
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--colorWhite);
+  font-family: var(--fontFamily);
+  font-weight: 400;
+  padding: 2.5vw;
+}
+ nav ul  {
     list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+  
+  .log-out-welcome p {
+    color: var(--colorWhite);
+    font-family: var(--fontFamily);
+    font-weight: 300;
+    padding: 5px;
+  }
+
+
+  
+
+  
+  
 /* Home view */
 h1 {
-    color: var(--colorBlue);
+    color: var(--colorBlack);
+    font-family: var(--fontFamily);
 }
 
 /* Account View

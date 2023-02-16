@@ -1,8 +1,8 @@
 <template>
 <div class="container">
-    <h3 :class="{completed: isComplete}">Task title: {{task.title}}</h3>
-    <p :class="{completed: isComplete}">Task description: {{ task.description }}</p>
-    <p :class="{completed: isComplete}">Task priority: {{ task.task_priority }}</p>
+    <h3 :class="{completed: isComplete}">Task Title: {{task.title}}</h3>
+    <p :class="{completed: isComplete}">Task Description: {{ task.description }}</p>
+    <p :class="{completed: isComplete}">Task Priority: {{ task.task_priority }}</p>
     <button @click="deleteTask">Delete</button>
     <button @click="completeTask">Completed</button>
     <!-- <button @click="testFunction">test emit</button> -->
@@ -76,10 +76,10 @@ const completeTask = () => {
 
 //new test
 const updateTask = () => {
-    if(newName.value.length === 0 || newDescription.value.length === 0 ){
+    if(newName.value.length === 0 || newDescription.value.length === 0 || newPriority.value.length === 0 ){
     // Primero comprobamos que ningún campo del input esté vacío y lanzamos el error con un timeout para informar al user.
     showErrorMessage.value = true;
-    errorMessage.value = 'The task title or description is empty';
+    errorMessage.value = 'The task title,  description  or priority is empty';
     setTimeout(() => {
     showErrorMessage.value = false;
     }, 5000);

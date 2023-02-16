@@ -1,9 +1,11 @@
 <template>
   <Nav />
+  <div class="profile-container">
   <h1>Name: {{username.split("@")[0]}}</h1>
   <h1>Handle: @{{username.split("@")[0]}}</h1>
   <h1>Email: {{username}}</h1>
   <img :src="avatar_url ? avatar_url : 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png'" alt="Profile picture">
+</div>
 </template>
 
 <script setup>
