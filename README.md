@@ -101,6 +101,9 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to an occupa
 - [ ] Delete & update Task cancelEmit
 - [ ] Profiles- avatar/profile image
 - [ ] Ask if updateTasks can be for any task parameter and not all every time
+- [ ] Home CSS - add new task form & modify form
+- [ ] Sign in sign up css
+- [ ] Home CSS - add new task form & modify form
 
 #### Day One
 
@@ -139,23 +142,23 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to an occupa
 ###### Monday 13, February 2023
 - [x] Profiles - handle, email, name on account page
 - [x] Add priority to tasks
-- [ ]  Nav CSS
+
 
 #### Day Six
 
 ###### Tuesday 14, February 2023
-- [ ] Sign In & Out CSS
+Focused on occupational hazard course
 
 
 #### Day Seven
 
 ###### Wednesday 15, February 2023
-- [ ] Home CSS - add new task form & modify form
+Focused on occupational hazard course
 
 #### Day Eight
 
 ###### Thursday 16, February 2023
-- [ ] Home CSS - add new task form & modify form
+- [x]  Nav CSS
 
 #### Day Nine
 

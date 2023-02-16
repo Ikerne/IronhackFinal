@@ -1,11 +1,29 @@
 <template>
   <Nav />
-  <div class="profile-container">
-  <h1>Name: {{username.split("@")[0]}}</h1>
-  <h1>Handle: @{{username.split("@")[0]}}</h1>
-  <h1>Email: {{username}}</h1>
-  <img :src="avatar_url ? avatar_url : 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png'" alt="Profile picture">
-</div>
+  <div class="sticky-container">
+    <div class="sticky-outer">
+      <div class="sticky">
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+            <path
+              d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0"
+              stroke-linejoin="round"
+              stroke-linecap="square"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+        <div class="sticky-content">
+          <h1>Name: {{username.split("@")[0]}}</h1>
+          <h1>Handle: @{{username.split("@")[0]}}</h1>
+          <h1>Email: {{username}}</h1>
+          <img :src="avatar_url ? avatar_url : 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png'" alt="Profile picture">
+        </div>
+      </div>
+     </div>
+  </div>
+
 </template>
 
 <script setup>
