@@ -43,12 +43,13 @@ button {
     border: 1px solid var(--colorGray);
     border-radius: 4px;
     padding: 1px 3px;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
     box-shadow: 0px 2px 2px var(--colorGray);
     transition: all 0.3s ease-in-out;
     font-family: var(--fontFamily);
     font-weight:500;
+    
 }
 button:hover{
     transform: translateY(-1px);
@@ -87,6 +88,7 @@ nav {
     font-family: var(--fontFamily);
     font-weight: 400;
     padding: 2.5vw;
+    font-size: 16px;
 }
  nav ul  {
     list-style: none;
@@ -110,8 +112,8 @@ nav {
     
 } */
 
-/* Account View*/
-
+/* Account View, Sign In & Sign Up --- Use same sticky css */
+/*Sticky */
 /* Some positioning and ratios */
 .sticky-container {
     max-width: 270px;
@@ -178,12 +180,75 @@ nav {
     font-weight: 500;
   }
 
-  
   .sticky-content img {
     width: 40%;
     height: auto;
     margin: 1rem 0 0;
   }
+
+  /*Sign In & Sign Up forms */
+.input-field {
+  background-color: var(--colorWhite) ;
+  border: 1px solid var(--colorGray);
+  /* font-family: var(--fontFamily); */
+  font-weight: 400;
+  font-size: 16px;
+  padding: 1px;
+  border-radius: 4px;
+}
+.input-field-label{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*margin top fix */
+.button-signInUp  {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  }
+
+.form-input{ 
+  margin-top: 2px;
+}
+.sign-up-link{
+  padding: 0 0 0 0;
+}
+
+/*headers*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #F8F8F8;
+
+}
+
+.header-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--colorBlack);
+}
+
+.header-subtitle {
+  margin: 5px 0 0 0;
+  font-size: 18px;
+  color: var(--colorGray);
+}
+
+.header-description p {
+  margin: 0;
+}
+
+/* .header-description p:last-of-type {
+  margin-left: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: #FFF;
+  cursor: pointer;
+} */
+
  /* Add responsiveness */
 @media screen and (min-width: 640px) {
     .sticky:before {

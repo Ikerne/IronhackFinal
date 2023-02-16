@@ -79,8 +79,8 @@ I have applied the Creative Commons License for this project.
 
 
 Resources:
-     <p align="left"><a href="#link">descriptive text</a></p>
-     
+     <p align="left"><a href="https://dev.to/thormeier/fully-responsive-html-css-sticky-note-4okl">Sticky Note CSS</a></p>
+    <p align="left"><a href="#link">text</a></p>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -158,7 +158,10 @@ Focused on occupational hazard course
 #### Day Eight
 
 ###### Thursday 16, February 2023
-- [x]  Nav CSS
+- [x] Nav CSS
+- [X] Profile CSS 
+- [x] Sign In CSS
+- [x] Sign Up CSS
 
 #### Day Nine
 
@@ -168,7 +171,7 @@ Focused on occupational hazard course
 #### Day Ten
 
 ###### Monday 20, February 2023
-- [ ] Profile CSS 
+- [ ] task
 
 #### Day Eleven
 

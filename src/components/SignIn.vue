@@ -2,7 +2,7 @@
  
 <template>
 
-    <div class="container">
+  <div class="container">
       <div class="header">
         <div class="header-description">
           <h3 class="header-title">Welcome to TaskIt</h3>
@@ -10,47 +10,63 @@
             <p>Sign In</p>
           </div><!--end of header description div-->
       </div> <!--end of header div-->
-
-      <form @submit.prevent="signIn" class="form-sign-in">
-        <div class="form">
-          <div class="form-input">
-            <label class="input-field-label">E-mail</label>
-            <input
-              type="email"
-              class="input-field"
-              placeholder="example@gmail.com"
-              id="email"
-              v-model="email"
-              required
-            />
-          </div>
-          <div class="form-input">
-            <label class="input-field-label">Password</label>
-            <input
-              type="password"
-              class="input-field"
-              placeholder="**********"
-              id="password"
-              v-model="password"
-              required
-            />
-          </div>
-          <button class="button" type="submit">Sign In</button>
-          <p>
-            Have an account?
-            <PersonalRouter
-              :route="route"
-              :buttonText="buttonText"
-              class="sign-up-link"
-            />
-          </p>
-        </div>
-    </form>
-
-    <div v-show="errorMsg">{{errorMsg}}</div>
-
-
-    </div> <!--end of container div-->
+    <div class="sticky-container">
+      <div class="sticky-outer">
+        <div class="sticky">
+            <svg width="0" height="0">
+              <defs>
+                <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+                  <path
+                    d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0"
+                    stroke-linejoin="round"
+                    stroke-linecap="square"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            <div class="sticky-content">
+              <form @submit.prevent="signIn" class="form-sign-in">
+                <div class="form">
+                  <div class="form-input">
+                    <label class="input-field-label">E-mail</label>
+                    <input
+                      type="email"
+                      class="input-field"
+                      placeholder="example@gmail.com"
+                      id="email"
+                      v-model="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-input">
+                    <label class="input-field-label">Password</label>
+                    <input
+                      type="password"
+                      class="input-field"
+                      placeholder="**********"
+                      id="password"
+                      v-model="password"
+                      required
+                    />
+                  </div>
+                  
+                  <button class="button button-signInUp" type="submit">Sign In</button>
+                  <p>
+                    Have an account?
+                    <PersonalRouter
+                      :route="route"
+                      :buttonText="buttonText"
+                      class="sign-up-link nav-link"
+                    />
+                  </p>
+                </div>
+              </form>
+              <div v-show="errorMsg">{{errorMsg}}</div>
+            </div><!--end of sticky-content -->
+        </div> <!--end of sticky div-->
+      </div> <!--end of sticky outer div-->
+    </div>
+  </div> <!--end of container div-->
 
 
   
