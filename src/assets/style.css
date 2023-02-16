@@ -32,6 +32,7 @@
 }
 body {
     font-family: var(--fontFamily);
+    font-weight: 300;
     color: var(--colorBlack);
     width:100%;
     padding-right: 10px;
@@ -103,10 +104,11 @@ nav {
     padding: 5px;
   } 
 /* Home view */
-h1 {
+/* h1 {
     color: var(--colorBlack);
     font-family: var(--fontFamily);
-}
+    
+} */
 
 /* Account View*/
 
@@ -114,17 +116,15 @@ h1 {
 .sticky-container {
     max-width: 270px;
     position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
   }
   
   .sticky-outer {
     display: flex;
     padding-top: 92.5925926%;
     position: absolute;
-  
     width: 100%;
   }
   
@@ -162,9 +162,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: var(--fontFamily);
     margin: 0 auto;
-  
     line-height: 1.5;
     padding: 1rem; 
     flex-direction: column;
@@ -172,8 +170,14 @@ h1 {
   }
   .sticky-content h1 {
     margin: 0 0 0.5rem;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: var(--fontFamily);
+    font-weight: 400;
   }
+  .sticky-content h1 b {
+    font-weight: 500;
+  }
+
   
   .sticky-content img {
     width: 40%;
