@@ -167,6 +167,8 @@ Focused on occupational hazard course
 #### Day Nine
 
 ###### Friday 17, February 2023
+- [ ] Home CSS - create new task
+- [ ] Home CSS - modify task
 - [ ] Home CSS - tasks
 
 #### Day Ten
