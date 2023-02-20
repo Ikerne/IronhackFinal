@@ -223,8 +223,7 @@ Presentation Link: [https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-
 <!-- ACKNOWLEDGMENTS -->
 
 ## Acknowledgment
-<!-- ojo translate -->
-<!-- Queremos agradecer a los tres profesores de este bootcamp en Ironhack; Diego Zito, Jarko Garrido y Aleix Abuli. Gracias por su tiempo, toda la información brindada, su paciencia y las horas extra para ayudarnos a solventar todo tipo de dudas. También, al SOC por facilitarnos este curso de modo que podamos seguir formándonos profesionalmente.  -->
+I want to thank the three professors of this bootcamp at Ironhack; Diego Zito, Jarko Garrido and Aleix Abuli. Thank you for your time, information, patience and the extra hours to help solve all kinds of doubts. Also, to the SOC for providing me with this course so that I can continue training and growing professionally.
 
 
 
