@@ -1,34 +1,49 @@
 <template>
-<div class="container">
-    <h3 :class="{completed: isComplete}">Task Title: {{task.title}}</h3>
-    <p :class="{completed: isComplete}">Task Description: {{ task.description }}</p>
-    <p :class="{completed: isComplete}">Task Priority: {{ task.task_priority }}</p>
-    <button @click="deleteTask">Delete</button>
-    <button @click="completeTask">Completed</button>
-    <!-- <button @click="testFunction">test emit</button> -->
-    <button @click="showUpdateForm = true">Modify Task</button>
-    <div v-if="showUpdateForm">
-        <div v-if="showErrorMessage">
-            <p class="error-text">{{ errorMessage }}</p>
+<div class="task-sticky-container">
+  <div class="task-sticky-outer">
+    <div class="task-sticky">
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+            <path
+              d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0"
+              stroke-linejoin="round"
+              stroke-linecap="square"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    <div class="container task-sticky-content">
+        <h3 :class="{completed: isComplete}">Task Title: {{task.title}}</h3>
+        <p :class="{completed: isComplete}">Task Description: {{ task.description }}</p>
+        <p :class="{completed: isComplete}">Task Priority: {{ task.task_priority }}</p>
+        <button @click="deleteTask">Delete</button>
+        <button @click="completeTask">Completed</button>
+        <!-- <button @click="testFunction">test emit</button> -->
+        <button @click="showUpdateForm = true">Modify Task</button>
+        <div v-if="showUpdateForm">
+            <div v-if="showErrorMessage">
+                <p class="error-text">{{ errorMessage }}</p>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Change Task Title" v-model="newName">
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Change Task Description" v-model="newDescription" @keypress.enter="updateTask">
+            </div>
+            <div class="dropdown-field"> <!--ojo uncompleted extra functionality more work needed, this is to choose a task state this could also be changed to priority food for thought-->
+                <label for="taskPriority">Choose task priority:</label>
+                <select name="task-priority" id="task-priority" v-model="newPriority"  @keypress.enter="updateTask">
+                    <option value="Urgent" >Urgent</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+            <button @click="updateTask" class="button">Modify</button>
         </div>
-        <div class="input-field">
-            <input type="text" placeholder="Change Task Title" v-model="newName">
-        </div>
-        <div class="input-field">
-            <input type="text" placeholder="Change Task Description" v-model="newDescription" @keypress.enter="updateTask">
-        </div>
-        <div class="dropdown-field"> <!--ojo uncompleted extra functionality more work needed, this is to choose a task state this could also be changed to priority food for thought-->
-            <label for="taskPriority">Choose task priority:</label>
-            <select name="task-priority" id="task-priority" v-model="newPriority"  @keypress.enter="updateTask">
-                <option value="Urgent" >Urgent</option>
-                <option value="Normal">Normal</option>
-                <option value="Low">Low</option>
-            </select>
-        </div>
-       
-        <button @click="updateTask" class="button">send Modify</button>
-        <br>
     </div>
+</div>
+  </div>
 </div>
 </template>
 
@@ -74,6 +89,8 @@ const completeTask = () => {
     taskStore.toggleTask(isComplete.value, props.task.id);
 };
 
+
+
 //new test
 const updateTask = () => {
     if(newName.value.length === 0 || newDescription.value.length === 0 || newPriority.value.length === 0 ){
@@ -96,7 +113,7 @@ const updateTask = () => {
     newName.value = ""
     newDescription.value = ""
     newPriority.value = ""
-    console.log("¨test update");
+    // console.log("¨test update");
 
 }
 setTimeout(() => {
@@ -112,9 +129,7 @@ setTimeout(() => {
 </script>
 
 <style>
-.completed {
-    background-color: aquamarine;
-}
+
 </style>
 
 <!--

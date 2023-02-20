@@ -24,7 +24,7 @@
                 </clipPath>
               </defs>
             </svg>
-            <div class="sticky-content">
+            <div class="sticky-content blue-sticky">
               <form @submit.prevent="signIn" class="form-sign-in">
                 <div class="form">
                   <div class="form-input">

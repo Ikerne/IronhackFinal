@@ -2,11 +2,12 @@
   <div class="wrapper">
     <Nav />
 
-    <div class="content">
+    <!-- <div class="content">
       <h3>Your account:</h3>
       <router-link to="/account">Account</router-link>
-    </div>
+    </div> -->
     <NewTask  @new-task-emit="addTaskSupabase" />
+
     <h1>Tasks:</h1>
     <TaskItem @delete-emit="deleteTask" @update-emit="addUpdateTaskSupabase" v-for="task in tasks" :key="task.id" :task="task" />
   </div>
@@ -54,7 +55,9 @@ const updateTask = ()=>{
 const addTaskSupabase = (newTask) => {
   alert(`Your task called: ${newTask.title} described as: 
  ${newTask.description} has been added successfully `);
- // variables para guardar cara clave/key+valor del objeto del emit dentro se su variable correspondiente para poder pasarle segun la logica de la funcion que se conecta con la base de datos en la tienda de task.js con nombre addTask
+
+ // Variables to save key + value of the emit object, to according to the function logic, connect with the store task.js under the name addTask.
+
  let newTaskTitle = newTask.title;
  let newTaskDescription = newTask.description;
  let newTaskPriority = newTask.task_priority;

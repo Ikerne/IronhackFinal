@@ -81,14 +81,15 @@ I have applied the Creative Commons License for this project.
 Resources:
      <p align="left"><a href="https://dev.to/thormeier/fully-responsive-html-css-sticky-note-4okl">Sticky Note CSS</a></p>
     <p align="left"><a href="https://colorhunt.co/collection">Color Palette</a></p>
-    <p align="left"><a href="#link">text</a></p>
+    <p align="left"><a href ="https://colordesigner.io/gradient-generator">Gradient Generator </a></p> <!---chose 20 to generate and chose first 4-->
+    <p align="left"><a href="#link"></a>description</p> 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-This project was built with vue.js.....
+This project was built with Vue 3, using HTML, JavaScript & CSS. Web page was launched using vercel. GitHub was used for version safety and control. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,19 +168,21 @@ Focused on occupational hazard course
 #### Day Nine
 
 ###### Friday 17, February 2023
-- [ ] Home CSS - create new task
-- [ ] Home CSS - modify task
-- [ ] Home CSS - tasks
+Focused on occupational hazard course
 
 #### Day Ten
 
 ###### Monday 20, February 2023
-- [ ] task
+- [1/2] Home CSS - create new task
+- [ ] Home CSS - modify task
+- [1/2] Home CSS - tasks
 
 #### Day Eleven
 
 ###### Tuesday 21, February 2023
-- [ ] task
+- [1/2] Home CSS - create new task
+- [ ] Home CSS - modify task
+- [1/2] Home CSS - tasks
 
 #### Day Twelve
 

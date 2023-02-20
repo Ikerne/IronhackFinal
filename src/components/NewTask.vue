@@ -1,27 +1,49 @@
 <template>
-    <h1>Add a new Task</h1>
-    <div v-if="showErrorMessage">
-        <p class="error-text">{{ errorMessage }}</p>
+     <button @click="showNewTask = true">Add a new Task +</button>
+     <div class="sticky-container .task-sticky-container" v-if="showNewTask ">
+  <div class="sticky-outer">
+    <div class="sticky">
+      <svg width="0" height="0">
+        <defs>
+          <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+            <path
+              d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0"
+              stroke-linejoin="round"
+              stroke-linecap="square"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+      <div class="sticky-content blue-sticky">
+      <div >
+          <h1>Add a new Task</h1>
+          <div v-if="showErrorMessage">
+              <p class="error-text">{{ errorMessage }}</p>
+          </div>
+          <div>
+              <div class="input-field">
+                  <input type="text" placeholder="Add a Task Title - Listen to Kendrick Lamar" v-model="name">
+              </div>
+              <div class="input-field">
+                  <input type="text" placeholder="Add a Task Description - Look up Kendrick Lamar's FEAR album on spotify and listen to the whole album." v-model="description" @keypress.enter="addTask">
+              </div>
+              <div class="dropdown-field"> <!--ojo uncompleted extra functionality more work needed, this is to choose a task state this could also be changed to priority food for thought-->
+                  <label for="taskPriority">Choose task priority:</label>
+                  <select name="task-priority" id="task-priority" v-model="priority">
+                      <option value="Urgent" >Urgent</option>
+                      <option value="Normal" selected>Normal</option>
+                      <option value="Low">Low</option>
+                  </select>
+              </div>
+              <button @click="addTask" class="button">Add</button>
+              <button @click="cancelAddTask">Close</button>
+              <!-- <button @click="testFunction">test emit</button> -->
+          </div>
+        </div>
+     </div>
     </div>
-    <div>
-        <div class="input-field">
-            <input type="text" placeholder="Add a Task Title - Listen to Kendrick Lamar" v-model="name">
-        </div>
-        <div class="input-field">
-            <input type="text" placeholder="Add a Task Description - Look up Kendrick Lamar's FEAR album on spotify and listen to the whole album." v-model="description" @keypress.enter="addTask">
-        </div>
-        <div class="dropdown-field"> <!--ojo uncompleted extra functionality more work needed, this is to choose a task state this could also be changed to priority food for thought-->
-            <label for="taskPriority">Choose task priority:</label>
-            <select name="task-priority" id="task-priority" v-model="priority">
-                <option value="Urgent" >Urgent</option>
-                <option value="Normal" selected>Normal</option>
-                <option value="Low">Low</option>
-            </select>
-        </div>
-        <button @click="addTask" class="button">Add</button>
-        <br>
-        <!-- <button @click="testFunction">test emit</button> -->
-    </div>
+  </div>
+</div>
 </template>
 
 <script setup>
@@ -35,16 +57,13 @@ const showErrorMessage = ref(false);
 // const constant to save a variable that holds the value of the error message
 const errorMessage = ref(null);
 
-// --
-// --
-// --
-// --
-// --
-// --
+// constant to show add new task 
+const showNewTask = ref(false);
 
 // var para guardar mi metodo nativo de VUE que es autimportado, es decir no tengo que referenciarlo en "ïmport" como hacemos con el ref en la linea 18, este metodo tienes este syntax de aca:^
 const emit = defineEmits(["testEmit", "newTaskEmit"])
 
+// test emit
 const testFunction = () => {
     emit("testEmit", name.value)
 }
@@ -56,7 +75,18 @@ const taskStore = useTaskStore();
 const name = ref('');
 const description = ref('');
 const priority = ref('');
+//method to clear fields of new task
+const clearFields = () => {
+  name.value = '';
+  description.value = '';
+  priority.value = '';
+};
 
+// method to clear inputs and close the new task form
+const cancelAddTask = () => {
+  clearFields();
+  showNewTask.value = false;
+};
 // Arrow function para crear tareas.
 const addTask = () => {
 if(name.value.length === 0 || description.value.length === 0 || priority.value.length === 0){
@@ -73,14 +103,18 @@ if(name.value.length === 0 || description.value.length === 0 || priority.value.l
         description: description.value,
         task_priority: priority.value,
     }
-    console.log(newTask);
+    // console.log(newTask);
     emit("newTaskEmit", newTask);
-    name.value = ""
-    description.value = ""
-    priority.value = ""
+    clearFields();
+    // name.value = ""
+    // description.value = ""
+    // priority.value = ""
 
-    console.log(newTask);
+    // console.log(newTask);
 }
+ setTimeout(() => {
+ showNewTask.value = false;
+ }, 1);
 };
 
 </script>

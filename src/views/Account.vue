@@ -14,7 +14,7 @@
           </clipPath>
         </defs>
       </svg>
-        <div class="sticky-content">
+        <div class="sticky-content blue-sticky">
           <h1><b>Name:</b> {{username.split("@")[0]}}</h1>
           <h1><b>Handle:</b> @{{username.split("@")[0]}}</h1>
           <h1><b>Email:</b> {{username}}</h1>
