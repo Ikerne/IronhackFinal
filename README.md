@@ -174,7 +174,6 @@ Focused on occupational hazard course
 
 ###### Monday 20, February 2023
 - [1/2] Home CSS - create new task
-- [ ] Home CSS - modify task
 - [1/2] Home CSS - tasks
 
 #### Day Eleven
