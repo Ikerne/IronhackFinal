@@ -33,7 +33,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     line-height: 1.5;
     font-size: 16px;
 }
@@ -84,9 +84,8 @@ button:active {
 .task-sticky-container {
   max-width: 270px;
   transform: translate(-50%, -50%);
- position: relative;
- display: flex;
-/* left: 300px; */
+  position: relative;
+  display: flex; 
 }
 /*.task-wrapper{
 
@@ -100,7 +99,47 @@ margin-bottom: 20px; */
 /*
 }*/
 
+.task-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 5vw;
+  /* display: flex;
+  flex-direction: column; */
+  margin-left: 20vw; /*This is why my stickers are not cut halfway on the left*/
+ /* justify-items: stretch; */
+  margin: 0 0 0 15vw;
+}
 
+.task-button-box{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1vw 0 1vw 0;
+}
+.task-sticky-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 1rem;
+  flex-direction: column;
+  clip-path: url(#stickyClip);
+}
+
+.task-sticky-content h3 {
+  align-self: flex-start;
+  font-size: 16px;
+  font-family: var(--fontFamily);
+  font-weight: 500;
+  margin-bottom: 1vw;
+
+}
+/* .priority-text{
+  align-self: right;
+} */
 /*until here its part of tasks ojo move to correct place*/
 .sticky-outer {
   display: flex;
@@ -143,11 +182,13 @@ margin-bottom: 20px; */
   flex-direction: column;
   clip-path: url(#stickyClip);
 }
-.sticky-content h1 {
-  margin: 0 0 0.5rem;
-  font-size: 14px;
+.sticky-content h3 {
+  align-self: flex-start;
+  font-size: 16px;
   font-family: var(--fontFamily);
-  font-weight: 400;
+  font-weight: 500;
+  margin-bottom: 2vw;
+
 }
 .sticky-content h1 b {
   font-weight: 500;
@@ -241,7 +282,7 @@ h3 {
   color: var(--colorBlack);
   font-family: var(--fontFamily);
 }
-.input-field {
+.input-field .dropdown-field{
   background-color: var(--colorWhite) ;
   border: 1px solid var(--colorGray);
   /* font-family: var(--fontFamily); */
@@ -250,10 +291,10 @@ h3 {
   /* padding: 1px; */
   border-radius: 4px;
 }
-.input-field-label{
+/* .input-field-label{
   font-size: 16px;
   font-weight: 400;
-}
+} */
 input{
   width: 100%;
 }
@@ -310,10 +351,13 @@ input{
 h1 {
   color: var(--colorBlack);
   font-family: var(--fontFamily);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 2vw 0 1vw 2vw;
 }
-
+.new-task-button{
+  margin: 1vw 0 0 2vw;
+}
 /*sticky for New Task (most sticky css is under Sticky CSS) */
 .blue-sticky h1{
   color: var(--colorBlack);
@@ -346,6 +390,11 @@ text-decoration: line-through;
     .sticky-content {
       font-size: 1.25rem;
     }
+    /* .task-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto auto auto;
+      margin-left: 2vw;
+    } */
   }
   /* Tablet view */
   @media screen and (min-width: 768px) {
@@ -356,6 +405,11 @@ text-decoration: line-through;
     .sticky-content {
       font-size: 1.5rem;
     }
+    /* .task-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      margin-left: 5vw;
+    } */
   }
   /* Desktop view */
   @media screen and (min-width: 1024px) {

@@ -14,14 +14,21 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="task-sticky-content sticky-content " :class="{'pink-sticky': props.task.task_priority === 'Urgent', 'orange-sticky': props.task.task_priority === 'Normal', 'yellow-sticky': props.task.task_priority === 'Low'}"> <!--change class of color-sticky to change color ojo reminder-->
-              <h3 :class="{completed: isComplete}">Task Title: {{task.title}}</h3>
-              <p :class="{completed: isComplete}">Task Description: {{ task.description }}</p>
-              <p :class="{completed: isComplete}">Task Priority: {{ task.task_priority }}</p>
-              <button @click="deleteTask">Delete</button>
-              <button @click="completeTask">Completed</button>
-              <!-- <button @click="testFunction">test emit</button> -->
-              <button @click="showUpdateForm = true">Modify Task</button>
+          <div class="sticky-content1 task-sticky-content" :class="{'pink-sticky': props.task.task_priority === 'Urgent', 'orange-sticky': props.task.task_priority === 'Normal', 'yellow-sticky': props.task.task_priority === 'Low'}"> 
+              <h3 :class="{completed: isComplete}">{{task.title}}</h3>
+              <p :class="{completed: isComplete}">{{ task.description }}</p>
+              <div class="priority-text">
+              <p :class="{completed: isComplete}">{{ task.task_priority }}</p>
+            </div>
+              <!-- <p :class="{completed: isComplete}">Task Priority: {{ task.task_priority }}</p> -->
+              <div class="task-button-box">
+                <button @click="deleteTask">Delete</button>
+                <button @click="completeTask">Complete</button>
+                <!-- <button @click="testFunction">test emit</button> -->
+                <button @click="showUpdateForm = true">Modify</button>
+              </div>
+
+          
               <div v-if="showUpdateForm">
                   <div v-if="showErrorMessage">
                       <p class="error-text">{{ errorMessage }}</p>
@@ -41,6 +48,8 @@
                       </select>
                   </div>
                   <button @click="updateTask" class="button">Modify</button>
+                  <button @click="cancelModifyTask">Cancel</button>
+                  
               </div>
           </div>
         </div>
@@ -68,7 +77,18 @@ const newName = ref('');
 const newDescription = ref('');
 const newPriority = ref('');
 
+//method to clear fields of modify task
+const clearFields = () => {
+  newName.value = '';
+  newDescription.value = '';
+  newPriority.value = '';
+};
 
+// method to clear inputs and close the new task form
+const cancelModifyTask = () => {
+  clearFields();
+  showUpdateForm.value = false;
+};
 // Función para borrar la tarea a través de la store. El problema que tendremos aquí (y en NewTask.vue) es que cuando modifiquemos la base de datos los cambios no se verán reflejados en el v-for de Home.vue porque no estamos modificando la variable tasks guardada en Home. Usad el emit para cambiar esto y evitar ningún page refresh.
 const emit = defineEmits(["deleteEmit", "testEmit", "updateEmit"])
 
@@ -112,15 +132,16 @@ const updateTask = () => {
         
     }
     emit("updateEmit", newUpdate);
-    newName.value = ""
-    newDescription.value = ""
-    newPriority.value = ""
+    clearFields();
+    // newName.value = ""
+    // newDescription.value = ""
+    // newPriority.value = ""
     // console.log("¨test update");
 
 }
 setTimeout(() => {
  showUpdateForm.value = false;
-}, 5000);
+}, 1);
 };
 
 

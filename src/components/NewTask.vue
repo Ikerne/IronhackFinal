@@ -1,5 +1,5 @@
 <template>
-     <button @click="showNewTask = true">Add a new Task +</button>
+     <button class ="new-task-button" @click="showNewTask = true">Add a new Task +</button>
      <div class="sticky-container" v-if="showNewTask ">
   <div class="sticky-outer">
     <div class="sticky">
@@ -16,7 +16,7 @@
       </svg>
       <div class="sticky-content blue-sticky">
       <div >
-          <h1>Add a new Task</h1>
+          <h3>Add a new Task</h3>
           <div v-if="showErrorMessage">
               <p class="error-text">{{ errorMessage }}</p>
           </div>

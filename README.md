@@ -100,7 +100,6 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to an occupa
 #### Backlog
 - [ ] README improvement
 - [ ] Code cleanup
-- [ ] Delete & update Task cancelEmit
 - [ ] Profiles- avatar/profile image
 - [ ] Ask if updateTasks can be for any task parameter and not all every time
 - [ ] Home CSS - add new task form & modify form
@@ -179,25 +178,26 @@ Focused on occupational hazard course
 
 ###### Tuesday 21, February 2023
 - [x] Home CSS - create new task
-- [x] Home CSS - tasks background color
-- [ ] Home CSS - task items as 3 columns 
+- [x] Home CSS - tasks conditional background color
+- [X] Home CSS - task items as 3 columns 
 
 #### Day Twelve
 
 ###### Wednesday 22, February 2023
 - [ ] Home CSS - modify task
-
+- [ ] Home CSS - task items solve rows 
 
 #### Day Thirteen
 
 ###### Thursday 23, February 2023
-- [ ] task
+- [ ] 
 
 
 #### Day Fourteen
 
 ###### Friday 24, February 2023
-- [ ] task
+- [ ] Presentation
+- [ ] Final details check
 
 
 
