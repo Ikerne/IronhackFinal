@@ -1,50 +1,52 @@
 <template>
-<div class="task-sticky-container">
-  <div class="task-sticky-outer">
-    <div class="task-sticky">
-      <svg width="0" height="0">
-        <defs>
-          <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
-            <path
-              d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0"
-              stroke-linejoin="round"
-              stroke-linecap="square"
-            />
-          </clipPath>
-        </defs>
-      </svg>
-    <div class="container task-sticky-content">
-        <h3 :class="{completed: isComplete}">Task Title: {{task.title}}</h3>
-        <p :class="{completed: isComplete}">Task Description: {{ task.description }}</p>
-        <p :class="{completed: isComplete}">Task Priority: {{ task.task_priority }}</p>
-        <button @click="deleteTask">Delete</button>
-        <button @click="completeTask">Completed</button>
-        <!-- <button @click="testFunction">test emit</button> -->
-        <button @click="showUpdateForm = true">Modify Task</button>
-        <div v-if="showUpdateForm">
-            <div v-if="showErrorMessage">
-                <p class="error-text">{{ errorMessage }}</p>
-            </div>
-            <div class="input-field">
-                <input type="text" placeholder="Change Task Title" v-model="newName">
-            </div>
-            <div class="input-field">
-                <input type="text" placeholder="Change Task Description" v-model="newDescription" @keypress.enter="updateTask">
-            </div>
-            <div class="dropdown-field"> <!--ojo uncompleted extra functionality more work needed, this is to choose a task state this could also be changed to priority food for thought-->
-                <label for="taskPriority">Choose task priority:</label>
-                <select name="task-priority" id="task-priority" v-model="newPriority"  @keypress.enter="updateTask">
-                    <option value="Urgent" >Urgent</option>
-                    <option value="Normal">Normal</option>
-                    <option value="Low">Low</option>
-                </select>
-            </div>
-            <button @click="updateTask" class="button">Modify</button>
+  <div class=" task-wrapper">
+    <div class="task-sticky-container ">
+      <div class="task-sticky-outer sticky-outer">
+        <div class="task-sticky sticky">
+          <svg width="0" height="0">
+            <defs>
+              <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+                <path
+                  d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0"
+                  stroke-linejoin="round"
+                  stroke-linecap="square"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+          <div class="task-sticky-content sticky-content " :class="{'pink-sticky': props.task.task_priority === 'Urgent', 'orange-sticky': props.task.task_priority === 'Normal', 'yellow-sticky': props.task.task_priority === 'Low'}"> <!--change class of color-sticky to change color ojo reminder-->
+              <h3 :class="{completed: isComplete}">Task Title: {{task.title}}</h3>
+              <p :class="{completed: isComplete}">Task Description: {{ task.description }}</p>
+              <p :class="{completed: isComplete}">Task Priority: {{ task.task_priority }}</p>
+              <button @click="deleteTask">Delete</button>
+              <button @click="completeTask">Completed</button>
+              <!-- <button @click="testFunction">test emit</button> -->
+              <button @click="showUpdateForm = true">Modify Task</button>
+              <div v-if="showUpdateForm">
+                  <div v-if="showErrorMessage">
+                      <p class="error-text">{{ errorMessage }}</p>
+                  </div>
+                  <div class="input-field">
+                      <input type="text" placeholder="Change Task Title" v-model="newName">
+                  </div>
+                  <div class="input-field">
+                      <input type="text" placeholder="Change Task Description" v-model="newDescription" @keypress.enter="updateTask">
+                  </div>
+                  <div class="dropdown-field"> 
+                      <label for="taskPriority">Choose task priority:</label>
+                      <select name="task-priority" id="task-priority" v-model="newPriority"  @keypress.enter="updateTask">
+                          <option value="Urgent" >Urgent</option>
+                          <option value="Normal">Normal</option>
+                          <option value="Low">Low</option>
+                      </select>
+                  </div>
+                  <button @click="updateTask" class="button">Modify</button>
+              </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
   </div>
-</div>
 </template>
 
 <script setup>
@@ -58,10 +60,10 @@ const showUpdateForm = ref(false);
 const props = defineProps({
     task: Object,
 });
-//variables para mostrar error si no hay info en los inputs al modificar la task
+// Variables to show if there id no information in the inputs when modifying a task 
 const errorMessage = ref(null);
 const showErrorMessage = ref(false);
-// variables para los valors de los inputs
+// Variables for the input values 
 const newName = ref('');
 const newDescription = ref('');
 const newPriority = ref('');
@@ -121,10 +123,7 @@ setTimeout(() => {
 }, 5000);
 };
 
-// jarko approach
-// const updateTask = async() => {
-//    await taskStore.updateTask("prssssops.task.title", "description", props.task.id);
-//     };
+
 
 </script>
 

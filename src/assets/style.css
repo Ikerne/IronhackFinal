@@ -76,8 +76,29 @@ button:active {
   top: 50%; /* ojo centered top*/
   left: 50%; /* ojo centered left*/
   transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
+
+/*task item sticky container move to correct are in this document ojo*/
+.task-sticky-container {
+  max-width: 270px;
+  transform: translate(-50%, -50%);
+ position: relative;
+ display: flex;
+/* left: 300px; */
+}
+.task-wrapper{
+
+/* height: 100vw; */
+display: flex;
+
+position: relative;
+flex-direction: column;
+max-width:270px;}
+
+
+/*until here its part of tasks ojo move to correct place*/
 .sticky-outer {
   display: flex;
   padding-top: 92.5925926%;
@@ -144,9 +165,9 @@ button:active {
     var(--colorBlueG2) 75%,
     var(--colorBlueG3) 100%
   );
-  z-index: 1;
+  
 }
-.yellow{
+.yellow-sticky{
   background: linear-gradient(
     180deg,
     var(--colorYellow) 0%,
@@ -155,16 +176,16 @@ button:active {
     var(--colorYellowG3) 100%
   );
 }
-.orange{
+.orange-sticky{
   background: linear-gradient(
     180deg,
     var(--colorOrange) 0%,
-    var(--colorOrangeG1) Orange
+    var(--colorOrangeG1) 12%,
     var(--colorOrangeG2) 75%,
     var(--colorOrangeG3) 100%
   );
 }
-.pink{
+.pink-sticky{
   background: linear-gradient(
     180deg,
     var(--colorPink) 0%,
@@ -291,8 +312,17 @@ h1 {
 }
 
 /*sticky for New Task (most sticky css is under Sticky CSS) */
+.blue-sticky h1{
+  color: var(--colorBlack);
+  font-family: var(--fontFamily);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
 
-
+}
+.dropdown-field{
+  margin-bottom: 15px;
+}
 
 /* Task as completed */
 .completed {

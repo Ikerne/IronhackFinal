@@ -1,6 +1,6 @@
 <template>
      <button @click="showNewTask = true">Add a new Task +</button>
-     <div class="sticky-container .task-sticky-container" v-if="showNewTask ">
+     <div class="sticky-container" v-if="showNewTask ">
   <div class="sticky-outer">
     <div class="sticky">
       <svg width="0" height="0">
@@ -27,7 +27,7 @@
               <div class="input-field">
                   <input type="text" placeholder="Add a Task Description - Look up Kendrick Lamar's FEAR album on spotify and listen to the whole album." v-model="description" @keypress.enter="addTask">
               </div>
-              <div class="dropdown-field"> <!--ojo uncompleted extra functionality more work needed, this is to choose a task state this could also be changed to priority food for thought-->
+              <div class="dropdown-field"> 
                   <label for="taskPriority">Choose task priority:</label>
                   <select name="task-priority" id="task-priority" v-model="priority">
                       <option value="Urgent" >Urgent</option>
@@ -36,7 +36,7 @@
                   </select>
               </div>
               <button @click="addTask" class="button">Add</button>
-              <button @click="cancelAddTask">Close</button>
+              <button @click="cancelAddTask">Cancel</button>
               <!-- <button @click="testFunction">test emit</button> -->
           </div>
         </div>

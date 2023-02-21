@@ -104,7 +104,6 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to an occupa
 - [ ] Profiles- avatar/profile image
 - [ ] Ask if updateTasks can be for any task parameter and not all every time
 - [ ] Home CSS - add new task form & modify form
-- [ ] Sign in sign up css
 - [ ] Home CSS - add new task form & modify form
 
 #### Day One
@@ -174,19 +173,19 @@ Focused on occupational hazard course
 
 ###### Monday 20, February 2023
 - [1/2] Home CSS - create new task
-- [1/2] Home CSS - tasks
+- [1/2] Home CSS - tasks background color
 
 #### Day Eleven
 
 ###### Tuesday 21, February 2023
-- [1/2] Home CSS - create new task
-- [ ] Home CSS - modify task
-- [1/2] Home CSS - tasks
+- [x] Home CSS - create new task
+- [x] Home CSS - tasks background color
+- [ ] Home CSS - task items as 3 columns 
 
 #### Day Twelve
 
 ###### Wednesday 22, February 2023
-- [ ] task
+- [ ] Home CSS - modify task
 
 
 #### Day Thirteen
