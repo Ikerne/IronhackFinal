@@ -69,7 +69,7 @@ Here are the guidelines for the final Vue.js project:
 - [x] State management: Pinia stores will be used to connect with the backend and control the state of the application.
 - [x] Navigation: Vue Router will be used to navigate the page without having to do a refresh.
 - [x] Single Style: A single style file (assets/style.css) will be created and correctly inserted into main.js to access the classes and component ids.
-- [ ] Responsive design: the page will be responsive and will have at least two versions: mobile and desktop.
+- [x] Responsive design: the page will be responsive and will have at least two versions: mobile and desktop.
 - [x] Deployment: the application will be deployed in Vercel.
 - [x] Handling of asynchronous operations: asynchronous operations will be handled correctly with promises or async/await.
 - [x] Documentation: a work path will be maintained in the repository's readme, updating it daily.
@@ -183,7 +183,7 @@ Focused on occupational hazard course
 ###### Wednesday 22, February 2023
 - [x] Home CSS - modify task
 - [x] Home CSS - solve css for tasks
-- [1/2] Responsiveness 
+- [x] Responsiveness 
 
 #### Day Thirteen
 

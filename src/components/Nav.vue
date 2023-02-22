@@ -1,28 +1,23 @@
 <template>
   <nav>
-    <!-- <PersonalRouter :route="route" :buttonText="buttonText" class="logo-link"/> -->
-    <router-link class="nav-link" to="/"> Home </router-link>
-
-    <ul>
+    <ul class="menu" :class="{ 'show-menu': showMenu }">
+      <li><router-link class="nav-link" to="/">Home</router-link></li>
       <li>
-        <router-link class="nav-link burger" to="/taskManager">Task Manager</router-link>
+        <router-link class="nav-link" to="/taskManager">Task Manager</router-link>
       </li>
       <li>
-        <router-link class="nav-link burger" to="/account">Your Account</router-link>
+        <router-link class="nav-link" to="/account">Your Account</router-link>
+      </li>
+      <li class="log-out-welcome  burger-hide" v-if="userEmail">
+        <p>Welcome, {{ userEmail.split("@")[0] }}</p>
+      </li>
+      <li v-if="userEmail">
+        <button @click="signOut" class="button">Log out</button>
       </li>
     </ul>
-
-    <div>
-      <ul>
-        <li class="log-out-welcome burger-hide">
-          <p>Welcome, {{ userEmail.split("@")[0] }}</p>
-        </li>
-        <li>
-          <button @click="signOut" class="button burger">Log out</button>
-        </li>
-      </ul>
-    </div>
+    <button class="burger button-burger " @click="showMenu = !showMenu">☰</button>
   </nav>
+
 </template>
 
 <script setup>
@@ -64,7 +59,8 @@ const signOut = async () => {
     throw error;
   }
 };
-
+// show burger menu
+const showMenu = ref(false);
 // onMounted(() => {
 //   useUserStore().fetchUser();
 //   userName.value = useUserStore().profile.username;

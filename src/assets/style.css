@@ -24,13 +24,12 @@
     --fontSize-sm: 16px;
     --fontFamily: 'Open Sans', sans-serif;
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: inherit;
     line-height: 1.5;
-    font-size: 16px; 
+    font-size: var(--fontSize-sm); 
 }
 body {
     font-family: var(--fontFamily);
@@ -60,28 +59,22 @@ button:active {
     transform: translateY(1px);
     box-shadow: none;
 }
-
 /* Sticky CSS */
-
 /* Some positioning and ratios */
 .sticky-container {
   max-width: 270px;
-  position: relative; /* ojo centered*/
-  top: 50%; /* ojo centered top*/
-  left: 50%; /* ojo centered left*/
+  position: relative; 
+  top: 50%; 
+  left: 50%; 
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-
-
-
 .sticky-outer {
   display: flex;
   padding-top: 92.5925926%;
   position: absolute;
   width: 100%;
 }
-
 .sticky {
   position: absolute;
   top: 0;
@@ -89,7 +82,6 @@ button:active {
   right: 0;
   bottom: 0;
 }
-
 /* Shadow behind the sticky note */
 .sticky:before {
   box-shadow: -2px 2px 15px 0 var(--colorBlackG1) ;
@@ -101,10 +93,8 @@ button:active {
   position: absolute;
   top: 30%;
 }
-
 /* The sticky note itself */
 .sticky-content {
-
   width: 100%;
   height: 100%;
   display: flex;
@@ -118,25 +108,13 @@ button:active {
 }
 .sticky-content h3 {
   align-self: flex-start;
-  font-size: 16px;
+  font-size: var(--fontSize-sm);
   font-family: var(--fontFamily);
   font-weight: 500;
   margin-bottom: 2vw;
-
 }
 .sticky-content h1 b {
   font-weight: 500;
- 
-}
-/*------------------------ Account ------------------------*/
-.sticky-content img {
-  width: 40%;
-  height: auto;
-  margin: 1rem 0 0;
-}
-.blue-sticky h1 {
-  margin: 0 0 0 0;
-  
 }
 /* sticky colors */
 .blue-sticky{
@@ -148,7 +126,6 @@ button:active {
     var(--colorBlueG2) 75%,
     var(--colorBlueG3) 100%
   );
-  
 }
 .yellow-sticky{
   background: linear-gradient(
@@ -177,19 +154,28 @@ button:active {
     var(--colorPinkG3) 100%
   );
 }
+/*------------------------ Account ------------------------*/
+.sticky-content img {
+  width: 40%;
+  height: auto;
+  margin: 1rem 0 0;
+}
+.blue-sticky h1 {
+  margin: 0 0 0 0;
+}
 /*------------------- Nav Component -------------------*/
 nav {
-    background-color: var(--colorBlue);
-    color: var(--colorwhite);
-    height: 80px;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-family: var(--fontFamily);
-    padding: 0 10px 0 10px;
-    margin: 0 0 0 0;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: var(--colorBlue);
+  color: var(--colorwhite);
+  height: 80px;  
+  width: 100%;
+  font-family: var(--fontFamily);
+  padding: 10px 10px 10px 2px;
+  margin: 0 0 0 0;
 }
 .nav-link {
     text-decoration: none;
@@ -197,31 +183,32 @@ nav {
     font-family: var(--fontFamily);
     font-weight: 400;
     padding: 2.5vw;
-    font-size: 16px;
-    
+    font-size: var(--fontSize-sm);
 }
-
 .burger{
 display: block;
+font-size: 20px;
+cursor: pointer;
+background-color: transparent;
+border: none;
+color: var(--colorwhite);
+align-items: end;
+align-items: right;  
+display: none;
 }
-
- nav ul  {
-    list-style: none;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
 }
-  .log-out-welcome p {
-    color: var(--colorWhite);
-    font-family: var(--fontFamily);
-    font-weight: 300;
-    padding: 5px;
-  }
-
-
+.log-out-welcome p {
+  color: var(--colorWhite);
+  font-family: var(--fontFamily);
+  font-weight: 300;
+  padding: 5px;
+}
   /*-------------- Sign In & Sign Up Components --------------*/
 h3 {
   color: var(--colorBlack);
@@ -230,16 +217,10 @@ h3 {
 .input-field .dropdown-field{
   background-color: var(--colorWhite) ;
   border: 1px solid var(--colorGray);
-  /* font-family: var(--fontFamily); */
   font-weight: 400;
-  font-size: 16px;
-  /* padding: 1px; */
+  font-size: var(--fontSize-sm);
   border-radius: 4px;
 }
-/* .input-field-label{
-  font-size: 16px;
-  font-weight: 400;
-} */
 input{
   width: 100%;
   margin-bottom: 2px;
@@ -249,15 +230,12 @@ input{
   margin-top: 5px;
   margin-bottom: 5px;
   }
-
 .form-input{
   margin-top: 2px;
- 
 }
 .sign-up-link{
   padding: 0 0 0 0;
 }
-
 /* headers */
 .header {
   display: flex;
@@ -266,34 +244,21 @@ input{
   padding: 20px;
   background-color: #F8F8F8;
   width: 100vw;
-
 }
-
 .header-title {
   margin: 0;
   font-size: 24px;
   font-weight: 400;
   color: var(--colorBlack);
 }
-
 .header-subtitle {
   margin: 5px 0 0 0;
   font-size: 18px;
   color: var(--colorGray);
 }
-
 .header-description p {
   margin: 0;
 }
-
-/* .header-description p:last-of-type {
-  margin-left: 20px;
-  padding: 10px;
-  background-color: #333;
-  color: #FFF;
-  cursor: pointer;
-} */
-
 /*----------------------- Home view ----------------------*/
 h1 {
   color: var(--colorBlack);
@@ -305,45 +270,25 @@ h1 {
 .new-task-button{
   margin: 1vw 0 0 2vw;
 }
-/*task item sticky container move to correct are in this document ojo*/
+/*task item sticky */
 .task-sticky-container {
   max-width: 270px;
   transform: translate(-50%, -50%);
   position: relative;
   display: flex; 
-  
-
 }
 .task-wrapper{
-
 height:250px;
 width: 300px;
-
-/* display: flex; */
-/* width: 100%;
-height: 80px;
-margin-bottom: 20px; */
-/* position: relative; */
-/* flex-direction: column; */
-/* margin: auto; */
-
 }
-
 .task-container {
   display: flex;
   margin: 0 0 0 150px;
   direction: row;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
-  /* width:100%;
-  height: 100%; */
   gap:50px;
   justify-content: space-evenly;
-  /* display: flex;
-  flex-direction: column; */
-  /* margin: 0 0 0 250px; */
 }
-
 .task-button-box{
   display: flex;
   flex-wrap: wrap;
@@ -361,47 +306,31 @@ margin-bottom: 20px; */
   flex-direction: column;
   clip-path: url(#stickyClip);
 }
-
 .task-sticky-content h3 {
   align-self: flex-start;
-  font-size: 16px;
+  font-size: var(--fontSize-sm);
   font-family: var(--fontFamily);
   font-weight: 500;
   margin-bottom: 5px;
-
 }
-/* .priority-text{
-  align-self: right;
-} */
-/*until here its part of tasks ojo move to correct place*/
-
-
 /*sticky for New Task (most sticky css is under Sticky CSS) */
 .blue-sticky h1{
   color: var(--colorBlack);
   font-family: var(--fontFamily);
-  font-size: 16px;
+  font-size: var(--fontSize-sm);
   font-weight: 500;
   margin-bottom: 10px;
-
 }
 .dropdown-field{
   margin-bottom: 10px;
 }
-
 /* Task as completed */
 .completed {
 text-decoration: line-through;
 }
-
-
-
  /*------------------- Responsiveness Media Queries -----------------*/
-
-
  /* Phone view */
 @media screen and (max-width: 640px) {
-
   /*sticky*/
     .sticky:before {
       height: 79%;
@@ -417,12 +346,32 @@ text-decoration: line-through;
       height: fit-content;
       margin-left: 115px;
     }
-   nav { width: 100%;}
     /*nav burger menu*/
     .burger-hide{
        display: none;
     }
-
+    nav {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: flex-end;
+      height: auto;
+      direction: row;
+    }
+    .burger {
+      display: block;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .menu.show-menu {
+      display: flex;
+    }
+    .menu li {
+      margin: 2px 0;
+    }
   }
   /* Tablet view */
   @media screen and (max-width: 768px) {
@@ -438,14 +387,11 @@ text-decoration: line-through;
       direction:column;
     }
     .task-wrapper{
-    
       margin: 0 0 0 80px;
     }
-
-        /*burger menu*/
-
-        .burger-hide{
-          display: none;
+      /*burger menu*/
+    .burger-hide{
+      display: none;
    }
   }
  

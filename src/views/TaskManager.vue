@@ -8,8 +8,10 @@ TASK MANAGER WORK IN PROGRESS
     </div>
     <NewTask  @new-task-emit="addTaskSupabase" />
     <h1>Tasks:</h1> -->
-    <TaskItemCopy @delete-emit="deleteTask" @update-emit="addUpdateTaskSupabase" v-for="task in tasks" :key="task.id" :task="task" />
+    <div class="task-container">
+    <TaskItem @delete-emit="deleteTask" @update-emit="addUpdateTaskSupabase" v-for="task in tasks" :key="task.id" :task="task" />
   </div>
+</div>
   <!-- <p v-for="task in taskStore.tasksArr" :key="task.id">{{ task }}</p> -->
 </template>
 
@@ -19,7 +21,7 @@ import { useTaskStore } from "../stores/task";
 import { useRouter } from "vue-router";
 import Nav from "../components/Nav.vue";
 import NewTask from "../components/NewTask.vue";
-import TaskItemCopy from "../components/TaskItemCopy.vue";
+import TaskItem from "../components/TaskItem.vue";
 
 const taskStore = useTaskStore();
 
