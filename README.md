@@ -99,8 +99,8 @@ This project was built with Vue 3, using HTML, JavaScript & CSS. Web page was la
 Note: From monday 13 to friday 17 most of my time will be dedicated to an occupational hazard course. Less time will be spent working on the project during said week.
 
 #### Backlog
-
 - [ ] Profiles- avatar/profile image
+- [ ] Task Manager view
 
 #### Day One
 
@@ -168,8 +168,8 @@ Focused on occupational hazard course
 #### Day Ten
 
 ###### Monday 20, February 2023
-- [1/2] Home CSS - create new task
-- [1/2] Home CSS - tasks background color
+- [x] Home CSS - create new task start
+- [x] Home CSS - tasks conditional background color start
 
 #### Day Eleven
 
