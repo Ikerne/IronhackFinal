@@ -12,7 +12,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="./src/Images/HomeScreenshot.png" alt="Logo" width="100" height="100"> <!--ojo-->
+  <img src="./src/Images/HomeScreenshot.png" alt="Logo" width="500" height="400"> <!--ojo-->
   <h3 align="center">Task App</h3>
   <a href="https://ironhack-final.vercel.app">Visit Website</a> <!--ojo-->
 </div>
