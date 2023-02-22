@@ -185,7 +185,7 @@ Focused on occupational hazard course
 
 ###### Wednesday 22, February 2023
 - [ ] Home CSS - modify task
-- [ ] Home CSS - task items solve rows 
+- [ ] Home CSS - task items solve rows or solve css for tasks
 
 #### Day Thirteen
 
