@@ -1,4 +1,5 @@
 <template>
+  TASK ITEM COPY
   <div class=" task-wrapper">
     <div class="task-sticky-container ">
       <div class="task-sticky-outer sticky-outer">
@@ -14,12 +15,12 @@
               </clipPath>
             </defs>
           </svg>
-          <div class="sticky-content1 task-sticky-content" :class="{'pink-sticky': props.task.task_priority === 'Backlog / Pink', 'orange-sticky': props.task.task_priority === 'To do / Orange', 'yellow-sticky': props.task.task_priority === 'Doing / Yellow'}"> 
+          <div class="sticky-content1 task-sticky-content" :class="{'pink-sticky': props.task.task_priority === 'Urgent', 'orange-sticky': props.task.task_priority === 'Normal', 'yellow-sticky': props.task.task_priority === 'Low'}"> 
               <h3 :class="{completed: isComplete}">{{task.title}}</h3>
               <p :class="{completed: isComplete}">{{ task.description }}</p>
-              <!-- <div class="priority-text">
+              <div class="priority-text">
               <p :class="{completed: isComplete}">{{ task.task_priority }}</p>
-            </div> -->
+            </div>
               <!-- <p :class="{completed: isComplete}">Task Priority: {{ task.task_priority }}</p> -->
               <div class="task-button-box">
                 <button @click="deleteTask">Delete</button>
@@ -40,11 +41,11 @@
                       <input type="text" placeholder="Change Task Description" v-model="newDescription" @keypress.enter="updateTask">
                   </div>
                   <div class="dropdown-field"> 
-                      <label for="taskPriority">Task State/Color:</label>
+                      <label for="taskPriority">Choose task priority:</label>
                       <select name="task-priority" id="task-priority" v-model="newPriority"  @keypress.enter="updateTask">
-                          <option value="Backlog / Pink" >Backlog / Pink</option>
-                          <option value="To do / Orange">To do / Orange</option>
-                          <option value="Doing / Yellow">Doing / Yellow</option>
+                          <option value="Urgent" >Urgent</option>
+                          <option value="Normal">Normal</option>
+                          <option value="Low">Low</option>
                       </select>
                   </div>
                   <button @click="updateTask" class="button">Modify</button>

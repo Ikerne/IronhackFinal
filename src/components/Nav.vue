@@ -5,20 +5,20 @@
 
     <ul>
       <li>
-        <router-link class="nav-link" to="/taskManager">Task Manager</router-link>
+        <router-link class="nav-link burger" to="/taskManager">Task Manager</router-link>
       </li>
       <li>
-        <router-link class="nav-link" to="/account">Your Account</router-link>
+        <router-link class="nav-link burger" to="/account">Your Account</router-link>
       </li>
     </ul>
 
     <div>
       <ul>
-        <li class="log-out-welcome">
+        <li class="log-out-welcome burger-hide">
           <p>Welcome, {{ userEmail.split("@")[0] }}</p>
         </li>
         <li>
-          <button @click="signOut" class="button">Log out</button>
+          <button @click="signOut" class="button burger">Log out</button>
         </li>
       </ul>
     </div>

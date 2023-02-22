@@ -2,13 +2,13 @@
   <div class="wrapper">
     <Nav />
 TASK MANAGER WORK IN PROGRESS
-   <div class="content">
+   <!-- <div class="content">
       <h3>Your account:</h3>
       <router-link to="/account">Account</router-link>
     </div>
     <NewTask  @new-task-emit="addTaskSupabase" />
-    <h1>Tasks:</h1>
-    <TaskItem @delete-emit="deleteTask" @update-emit="addUpdateTaskSupabase" v-for="task in tasks" :key="task.id" :task="task" />
+    <h1>Tasks:</h1> -->
+    <TaskItemCopy @delete-emit="deleteTask" @update-emit="addUpdateTaskSupabase" v-for="task in tasks" :key="task.id" :task="task" />
   </div>
   <!-- <p v-for="task in taskStore.tasksArr" :key="task.id">{{ task }}</p> -->
 </template>
@@ -19,7 +19,7 @@ import { useTaskStore } from "../stores/task";
 import { useRouter } from "vue-router";
 import Nav from "../components/Nav.vue";
 import NewTask from "../components/NewTask.vue";
-import TaskItem from "../components/TaskItem.vue";
+import TaskItemCopy from "../components/TaskItemCopy.vue";
 
 const taskStore = useTaskStore();
 

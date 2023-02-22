@@ -98,12 +98,8 @@ This project was built with Vue 3, using HTML, JavaScript & CSS. Web page was la
 Note: From monday 13 to friday 17 most of my time will be dedicated to an occupational hazard course. Less time will be spent working on the project during said week.
 
 #### Backlog
-- [ ] README improvement
-- [ ] Code cleanup
+
 - [ ] Profiles- avatar/profile image
-- [ ] Ask if updateTasks can be for any task parameter and not all every time
-- [ ] Home CSS - add new task form & modify form
-- [ ] Home CSS - add new task form & modify form
 
 #### Day One
 
@@ -184,13 +180,15 @@ Focused on occupational hazard course
 #### Day Twelve
 
 ###### Wednesday 22, February 2023
-- [ ] Home CSS - modify task
-- [ ] Home CSS - task items solve rows or solve css for tasks
+- [x] Home CSS - modify task
+- [x] Home CSS - solve css for tasks
+- [1/2] Responsiveness 
 
 #### Day Thirteen
 
 ###### Thursday 23, February 2023
-- [ ] 
+- [ ] README improvement
+- [ ] Code cleanup
 
 
 #### Day Fourteen

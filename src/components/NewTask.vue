@@ -28,11 +28,11 @@
                   <input type="text" placeholder="Add a Task Description - Look up Kendrick Lamar's FEAR album on spotify and listen to the whole album." v-model="description" @keypress.enter="addTask">
               </div>
               <div class="dropdown-field"> 
-                  <label for="taskPriority">Choose task priority:</label>
+                  <label for="taskPriority">Task State/Color:</label>
                   <select name="task-priority" id="task-priority" v-model="priority">
-                      <option value="Urgent" >Urgent</option>
-                      <option value="Normal" selected>Normal</option>
-                      <option value="Low">Low</option>
+                    <option value="Backlog / Pink" >Backlog / Pink</option>
+                          <option selected value="To do / Orange">To do / Orange</option>
+                          <option value="Doing / Yellow">Doing / Yellow</option>
                   </select>
               </div>
               <button @click="addTask" class="button">Add</button>
@@ -114,7 +114,7 @@ if(name.value.length === 0 || description.value.length === 0 || priority.value.l
 }
  setTimeout(() => {
  showNewTask.value = false;
- }, 1);
+ }, 5000);
 };
 
 </script>
