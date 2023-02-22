@@ -136,12 +136,17 @@ button:active {
 }
 .sticky-content h1 b {
   font-weight: 500;
+ 
 }
 /*--- Account ---*/
 .sticky-content img {
   width: 40%;
   height: auto;
   margin: 1rem 0 0;
+}
+.blue-sticky h1 {
+  margin: 0 0 0 0;
+  
 }
 /* sticky colors */
 .blue-sticky{
@@ -247,6 +252,7 @@ h3 {
 } */
 input{
   width: 100%;
+  margin-bottom: 2px;
 }
 /* margin top fix */
 .button-signInUp  {
@@ -256,6 +262,7 @@ input{
 
 .form-input{
   margin-top: 2px;
+ 
 }
 .sign-up-link{
   padding: 0 0 0 0;
@@ -350,7 +357,7 @@ margin-bottom: 20px; */
 .task-button-box{
   display: flex;
   flex-wrap: wrap;
-  margin: 1vw 0 1vw 0;
+  margin: 5px 0 10px 0;
 }
 .task-sticky-content{
   width: 100%;
