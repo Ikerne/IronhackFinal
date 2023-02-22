@@ -12,7 +12,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="https://media.giphy.com/media/znlSLQEFWmxI3XO9zP/giphy.gif" alt="Logo" width="100" height="100"> <!--ojo-->
+  <img src="./src/Images/HomeScreenshot.png" alt="Logo" width="100" height="100"> <!--ojo-->
   <h3 align="center">Task App</h3>
   <a href="https://ironhack-final.vercel.app">Visit Website</a> <!--ojo-->
 </div>
@@ -82,6 +82,7 @@ Resources:
      <p align="left"><a href="https://dev.to/thormeier/fully-responsive-html-css-sticky-note-4okl">Sticky Note CSS</a></p>
     <p align="left"><a href="https://colorhunt.co/collection">Color Palette</a></p>
     <p align="left"><a href ="https://colordesigner.io/gradient-generator">Gradient Generator </a></p> <!---chose 20 to generate and chose first 4-->
+    <p align= "left"><a href="https://codepen.io/mutedblues/pen/MmPNPG"></a>Hamburger Menu</p> 
     <p align="left"><a href="#link"></a>description</p> 
 
 
@@ -113,31 +114,31 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to an occupa
 #### Day Two
 
 ###### Wednesday  08, February 2023
-- [x] supabase profiles table 
-- [x] Sign Up
-- [x] Sign In
-- [x] Sign Out
+- [x] Supabase profiles table 
+- [x] Sign Up HTML & functionality
+- [x] Sign In HTML & functionality
+- [x] Sign Out HTML & functionality
 
 #### Day Three
 
 ###### Thursday 09, February 2023
-- [x] Create Task
-- [x] Read Task
-- [x] Delete Task deleteEmit
+- [x] Create Task HTML & functionality
+- [x] Read Task functionality
+- [x] Delete Task deleteEmit 
 
 #### Day Four
 
 ###### Friday 10, February 2023
 
-- [x] Completed Task 
-- [x] Update Task
+- [x] Completed Task functionality
+- [x] Update Task HTML & functionality
 
 
 #### Day Five
 
 ###### Monday 13, February 2023
 - [x] Profiles - handle, email, name on account page
-- [x] Add priority to tasks
+- [x] Add priority/state to tasks
 
 
 #### Day Six

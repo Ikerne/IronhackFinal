@@ -1,10 +1,9 @@
-/*--- General CSS - used in every view/component ---*/
+/*------------ General CSS - used in every view/component ------------*/
 :root {
     --colorWhite: #ffffff;
     --colorBlack: #000000;
     --colorBlackG1:#00000080;
     --colorBlackG2: #00000040;
-    --colorRed: red;
     --colorBlue: #9adcff;
     --colorBlueG1: #94d4f6;
     --colorBlueG2: #8ecced;
@@ -24,10 +23,6 @@
     --colorGray: #888787;
     --fontSize-sm: 16px;
     --fontFamily: 'Open Sans', sans-serif;
-    --fontTitle: 'Open Sans', sans-serif;
-    --fontBody: 'Open Sans', sans-serif;
-
-
 }
 
 *{
@@ -35,9 +30,7 @@
     padding: 0;
     box-sizing: inherit;
     line-height: 1.5;
-    font-size: 16px;
-  
-   
+    font-size: 16px; 
 }
 body {
     font-family: var(--fontFamily);
@@ -45,8 +38,6 @@ body {
     color: var(--colorBlack);
     width:100vw;
     padding-right: 10px;
-   
-
 }
 button {
     background-color: var(--colorWhite);
@@ -60,7 +51,6 @@ button {
     transition: all 0.3s ease-in-out;
     font-family: var(--fontFamily);
     font-weight:500;
-
 }
 button:hover{
     transform: translateY(-1px);
@@ -138,7 +128,7 @@ button:active {
   font-weight: 500;
  
 }
-/*--- Account ---*/
+/*------------------------ Account ------------------------*/
 .sticky-content img {
   width: 40%;
   height: auto;
@@ -187,7 +177,7 @@ button:active {
     var(--colorPinkG3) 100%
   );
 }
-/*--- Nav Component ---*/
+/*------------------- Nav Component -------------------*/
 nav {
     background-color: var(--colorBlue);
     color: var(--colorwhite);
@@ -232,7 +222,7 @@ display: block;
   }
 
 
-  /*--- Sign In & Sign Up Components ---*/
+  /*-------------- Sign In & Sign Up Components --------------*/
 h3 {
   color: var(--colorBlack);
   font-family: var(--fontFamily);
@@ -304,7 +294,7 @@ input{
   cursor: pointer;
 } */
 
-/*--- Home view ---*/
+/*----------------------- Home view ----------------------*/
 h1 {
   color: var(--colorBlack);
   font-family: var(--fontFamily);
@@ -406,7 +396,7 @@ text-decoration: line-through;
 
 
 
- /*--- Responsiveness Media Queries ---*/
+ /*------------------- Responsiveness Media Queries -----------------*/
 
 
  /* Phone view */
