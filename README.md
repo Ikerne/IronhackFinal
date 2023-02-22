@@ -59,7 +59,7 @@
 
 ## About the Project
 
-<img src="./resources/readMe/screenshot.png" alt="Logo" width="100%" height="50%">
+
 
 Here are the guidelines for the final Vue.js project:
 
@@ -68,11 +68,11 @@ Here are the guidelines for the final Vue.js project:
 - [x] Data storage: the application will be connected to Supabase and all the information of the tasks and users will be saved on that platform.
 - [x] State management: Pinia stores will be used to connect with the backend and control the state of the application.
 - [x] Navigation: Vue Router will be used to navigate the page without having to do a refresh.
-- [ ] Single Style: A single style file (assets/style.css) will be created and correctly inserted into main.js to access the classes and component ids.
+- [x] Single Style: A single style file (assets/style.css) will be created and correctly inserted into main.js to access the classes and component ids.
 - [ ] Responsive design: the page will be responsive and will have at least two versions: mobile and desktop.
 - [x] Deployment: the application will be deployed in Vercel.
 - [x] Handling of asynchronous operations: asynchronous operations will be handled correctly with promises or async/await.
-- [ ] Documentation: a work path will be maintained in the repository's readme, updating it daily.
+- [x] Documentation: a work path will be maintained in the repository's readme, updating it daily.
 
 
 I have applied the Creative Commons License for this project. 
