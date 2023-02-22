@@ -82,7 +82,7 @@ Resources:
      <p align="left"><a href="https://dev.to/thormeier/fully-responsive-html-css-sticky-note-4okl">Sticky Note CSS</a></p>
     <p align="left"><a href="https://colorhunt.co/collection">Color Palette</a></p>
     <p align="left"><a href ="https://colordesigner.io/gradient-generator">Gradient Generator </a></p> <!---chose 20 to generate and chose first 4-->
-    <p align="left"><a href ="https://codepen.io/mutedblues/pen/MmPNPG">Hamburger Menu<</a></p>
+    <p align="left"><a href ="https://codepen.io/mutedblues/pen/MmPNPG">Hamburger Menu</a></p>
     <p align="left"><a href="#link"></a>description</p> 
 
 
