@@ -15,7 +15,7 @@ TASK MANAGER WORK IN PROGRESS
 </div>
   <!-- <p v-for="task in taskStore.tasksArr" :key="task.id">{{ task }}</p> -->
 </template>
-
+<!--JS-->
 <script setup>
 import { ref, onUpdated } from "vue";
 import { useTaskStore } from "../stores/task";
@@ -26,10 +26,10 @@ import TaskItem from "../components/TaskItem.vue";
 
 const taskStore = useTaskStore();
 
-// Variable para guardar las tareas de supabase
+// Variable to save tasks in supabase
 const tasks = ref([]);
 
-// Creamos una función que conecte a la store para conseguir las tareas de supabase
+// Function to connect to store and get tasks from supabase
 const getTasks = async () => {
   tasks.value = await taskStore.fetchTasks()
 };
@@ -57,7 +57,7 @@ const updateTask = ()=>{
 const addTaskSupabase = (newTask) => {
   alert(`Your task called: ${newTask.title} described as: 
  ${newTask.description} has been added successfully `);
- // variables para guardar cara clave/key+valor del objeto del emit dentro se su variable correspondiente para poder pasarle segun la logica de la funcion que se conecta con la base de datos en la tienda de task.js con nombre addTask
+ // Variables to save key + value of the emit object, to according to the function logic, connect with the store task.js under the name addTaskSupabase.
  let newTaskTitle = newTask.title;
  let newTaskDescription = newTask.description;
  let newTaskPriority = newTask.task_priority;
@@ -73,7 +73,7 @@ const addUpdateTaskSupabase = (newUpdate) => {
   
 };
 </script>
-
+<!--CSS-->
 <style></style>
 
 <!-- 

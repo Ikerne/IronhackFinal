@@ -1,9 +1,10 @@
+<!--HTML-->
 <template>
   <div>
     <router-view />
   </div>
 </template>
-
+<!--JS-->
 <script setup>
 import { onMounted } from "vue";
 import { storeToRefs } from "pinia";
@@ -32,7 +33,5 @@ onMounted(async () => {
   }
 });
 </script>
-
-<style>
-
-</style>
+<!--CSS-->
+<style></style>

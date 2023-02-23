@@ -26,7 +26,7 @@
     </div> 
   </nav>
 </template>
-<!--JavaScript-->
+<!--JS-->
 <script setup>
 // import PersonalRouter from "./PersonalRouter.vue";
 import { useUserStore } from "../stores/user";

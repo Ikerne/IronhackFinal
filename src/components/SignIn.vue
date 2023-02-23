@@ -1,7 +1,5 @@
-<!-- COMPONENTE BOILERPLATE -->
- 
+<!--HTML-->
 <template>
-
   <div class="container">
       <div class="header">
         <div class="header-description">
@@ -49,7 +47,6 @@
                       required
                     />
                   </div>
-                  
                   <button class="button button-signInUp" type="submit">Sign In</button>
                   <p>
                     Have an account?
@@ -67,12 +64,8 @@
       </div> <!--end of sticky outer div-->
     </div>
   </div> <!--end of container div-->
-
-
-  
-
 </template>
-
+<!--JS-->
 <script setup>
 import { ref, computed } from "vue";
 import PersonalRouter from "./PersonalRouter.vue";
@@ -110,4 +103,3 @@ errorMsg.value = null;
 };
 </script>
 
-<style></style>

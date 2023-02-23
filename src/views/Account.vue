@@ -1,3 +1,4 @@
+<!--HTML-->
 <template>
   <Nav />
   <div class="sticky-container">
@@ -23,9 +24,8 @@
       </div>
      </div>
   </div>
-
 </template>
-
+<!--JS-->
 <script setup>
   import { supabase } from '../supabase'
   import { onMounted, ref, toRefs } from 'vue'
@@ -33,7 +33,6 @@
   import Nav from '../components/Nav.vue';
 
   const userStore = useUserStore();
-
   const loading = ref(false);
   const username = ref("");
   const website = ref(null);
@@ -61,10 +60,5 @@
     }
   }
 </script>
-
-<style>
-img {
-  width: 200px;
-  border-radius: 50%;
-}
-</style>
+<!--CSS-->
+<style></style>

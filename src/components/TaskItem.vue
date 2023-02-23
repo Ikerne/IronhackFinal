@@ -1,3 +1,4 @@
+<!--HTML-->
 <template>
   <div class=" task-wrapper">
     <div class="task-sticky-container ">
@@ -27,8 +28,6 @@
                 <!-- <button @click="testFunction">test emit</button> -->
                 <button @click="showUpdateForm = true">Modify</button>
               </div>
-
-          
               <div v-if="showUpdateForm">
                   <div v-if="showErrorMessage">
                       <p class="error-text">{{ errorMessage }}</p>
@@ -48,8 +47,7 @@
                       </select>
                   </div>
                   <button @click="updateTask" class="button">Modify</button>
-                  <button @click="cancelModifyTask">Cancel</button>
-                  
+                  <button @click="cancelModifyTask">Cancel</button>   
               </div>
           </div>
         </div>
@@ -89,21 +87,21 @@ const cancelModifyTask = () => {
   clearFields();
   showUpdateForm.value = false;
 };
-// Función para borrar la tarea a través de la store. El problema que tendremos aquí (y en NewTask.vue) es que cuando modifiquemos la base de datos los cambios no se verán reflejados en el v-for de Home.vue porque no estamos modificando la variable tasks guardada en Home. Usad el emit para cambiar esto y evitar ningún page refresh.
+// Emit
 const emit = defineEmits(["deleteEmit", "testEmit", "updateEmit"])
 
 // const testFunction = () => {
 //     emit("testEmit", )
 // }
 
-
+// delete task
 const deleteTask = async() => {
     await taskStore.deleteTask(props.task.id);
     // console.log("test");
     alert(`Your task ${props.task.title} was deleted`)
     emit("deleteEmit")
 };
-
+// complete task
 const completeTask = () => {
     //When called it should modify the style of h3 & p.
     isComplete.value = !isComplete.value;
@@ -113,10 +111,9 @@ const completeTask = () => {
 
 
 
-//new test
+//update task
 const updateTask = () => {
     if(newName.value.length === 0 || newDescription.value.length === 0 || newPriority.value.length === 0 ){
-    // Primero comprobamos que ningún campo del input esté vacío y lanzamos el error con un timeout para informar al user.
     showErrorMessage.value = true;
     errorMessage.value = 'The task title,  description  or priority is empty';
     setTimeout(() => {
@@ -133,9 +130,6 @@ const updateTask = () => {
     }
     emit("updateEmit", newUpdate);
     clearFields();
-    // newName.value = ""
-    // newDescription.value = ""
-    // newPriority.value = ""
     // console.log("¨test update");
 
 }
@@ -143,15 +137,7 @@ setTimeout(() => {
  showUpdateForm.value = false;
 }, 1);
 };
-
-
-
 </script>
-
-<style>
-
-</style>
-
 <!--
 **Hints**
 1. ref() or reactive() can be used here to store the following, think if you want to store them either individually or

@@ -9,7 +9,7 @@
   </div>
 </template>
 
-
+<!--JS-->
 <script setup>
 import { ref, onUpdated } from "vue";
 import { useTaskStore } from "../stores/task";
@@ -20,15 +20,14 @@ import TaskItem from "../components/TaskItem.vue";
 
 const taskStore = useTaskStore();
 
-// Variable para guardar las tareas de supabase
+// Variable to save tasks in supabase
 const tasks = ref([]);
 
-// Creamos una función que conecte a la store para conseguir las tareas de supabase
+// Function to connect to store and get tasks from supabase
 const getTasks = async () => {
   tasks.value = await taskStore.fetchTasks()
 };
 getTasks();
-
 onUpdated(()=> {
   getTasks()
  });
@@ -37,14 +36,12 @@ onUpdated(()=> {
 // const miCoolFunction = (miInfoRecibidaEjemplo) => {
 //   alert(`Hola ${miInfoRecibidaEjemplo}`);
 //  };
+
 // deletetask constant for deleteEmit
 const deleteTask = ()=>{
-  
 // console.log("testinggg");
 }
-
 const updateTask = ()=>{
-  
   // console.log("testing modify");
   }
 // function to send tasks to supabase
@@ -53,7 +50,6 @@ const addTaskSupabase = (newTask) => {
  ${newTask.description} has been added successfully `);
 
  // Variables to save key + value of the emit object, to according to the function logic, connect with the store task.js under the name addTask.
-
  let newTaskTitle = newTask.title;
  let newTaskDescription = newTask.description;
  let newTaskPriority = newTask.task_priority;
@@ -65,11 +61,10 @@ const addTaskSupabase = (newTask) => {
 const addUpdateTaskSupabase = (newUpdate) => {
   console.log(newUpdate);
   alert(`${newUpdate.title} ${newUpdate.description} ${newUpdate.task_priority}`);
-  taskStore.updateTask(newUpdate.title, newUpdate.description, newUpdate.task_priority, newUpdate.id )
-  
+  taskStore.updateTask(newUpdate.title, newUpdate.description, newUpdate.task_priority, newUpdate.id ) 
 };
 </script>
-
+<!--CSS-->
 <style></style>
 
 <!-- 

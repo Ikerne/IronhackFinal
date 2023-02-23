@@ -4,9 +4,9 @@ import { supabase } from "../supabase";
 import { useUserStore } from "./user";
 
 export const useTaskStore = defineStore("tasks", () => {
-  // Esta tienda utiliza el Composition API
+  // This store uses the Composition API
   const tasksArr = ref(null);
-  // conesguir tareas de supabase
+  // fetch tasks from supabase
   const fetchTasks = async () => {
     const { data: tasks } = await supabase
       .from("tasks")
@@ -17,7 +17,7 @@ export const useTaskStore = defineStore("tasks", () => {
     // console.log(tasks);
     return tasksArr.value;
   };
-  // añadir tareas de supabase
+  // add tasks to supabase
   const addTask = async (title, description, task_priority) => {
     console.log(useUserStore().user.id);
     const { data, error } = await supabase.from("tasks").insert([
@@ -30,7 +30,7 @@ export const useTaskStore = defineStore("tasks", () => {
       },
     ]);
   };
-  //completed?
+  //toggle completed
   const toggleTask = async (isComplete, id) => {
     //check it works
     // console.log("????");
@@ -45,7 +45,7 @@ export const useTaskStore = defineStore("tasks", () => {
     // .update({isComplete: isComplete}).match({id: id,});
   };
 
-  // modificar tareas de supabase
+  // modify tasks from supabase
   const updateTask = async (title, description, task_priority, id) => {
     const { data, error } = await supabase
       .from("tasks")
@@ -59,7 +59,7 @@ export const useTaskStore = defineStore("tasks", () => {
       });
   };
 
-  // borrar tareas de supabase
+  // delete tasks from supabase
   const deleteTask = async (id) => {
     const { data, error } = await supabase.from("tasks").delete().match({
       id: id,
