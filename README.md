@@ -188,6 +188,7 @@ Focused on occupational hazard course
 #### Day Thirteen
 
 ###### Thursday 23, February 2023
+- [x] Fix nav new issues due to responsiveness
 - [ ] README improvement
 - [ ] Code cleanup
 - [ ] Make Presentation
