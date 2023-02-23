@@ -46,7 +46,7 @@
         <li><a href="#future">Future</a></li>
       </ul>
     </li>
-    <li><a href="#about">About</a></li>
+    <li><a href="#about-me">About Me</a></li>
     <li><a href="#acknowledgment">Acknowledgment</a></li>
     <li><a href="#technical-challenge">Technical Challenge</a></li>
     <li><a href="#big-mistake">Big Mistake</a></li>
@@ -213,7 +213,7 @@ Focused on occupational hazard course
 
 
 
-## About me
+## About Me
 
 This bootcamp has been my first frontend experience, it's been intense, fun and interesting. I've worked as a Language Data Analyst for a company dedicated to AI solutions. 
  
