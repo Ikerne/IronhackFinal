@@ -76,10 +76,12 @@ Here are the guidelines for the final Vue.js project:
 
 I have applied the Creative Commons License for this project. 
 
-Project Links: [https://ironhack-final.vercel.app](https://ironhack-final.vercel.app)
+Links: 
+
+- Project Links: [https://ironhack-final.vercel.app](https://ironhack-final.vercel.app)
               & [https://github.com/Ikerne/IronhackFinal](https://github.com/Ikerne/IronhackFinal)  
 
-Presentation Link: [https://docs.google.com/presentation/d/1lg283dycfVgMR2mZiS0UTDD-YC9auNtIfAXftpCxAnY/edit?usp=sharing](https://docs.google.com/presentation/d/1lg283dycfVgMR2mZiS0UTDD-YC9auNtIfAXftpCxAnY/edit?usp=sharing) 
+- Presentation Link: [https://docs.google.com/presentation/d/1lg283dycfVgMR2mZiS0UTDD-YC9auNtIfAXftpCxAnY/edit?usp=sharing](https://docs.google.com/presentation/d/1lg283dycfVgMR2mZiS0UTDD-YC9auNtIfAXftpCxAnY/edit?usp=sharing) 
 
 Resources:
 - <p align="left"><a href="https://dev.to/thormeier/fully-responsive-html-css-sticky-note-4okl">Sticky Note CSS</a></p>
