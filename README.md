@@ -76,6 +76,11 @@ Here are the guidelines for the final Vue.js project:
 - [x] Handling of asynchronous operations: asynchronous operations will be handled correctly with promises or async/await.
 - [x] Documentation: a work path will be maintained in the repository's readme, updating it daily.
 
+
+### Built With
+
+This project was built with Vue 3, using HTML, JavaScript & CSS. Web page was launched using Vercel. GitHub was used for version safety and control. Supabase handles user authenthication and backend. 
+
 ### License
 
 I have applied the Creative Commons License for this project. 
@@ -88,10 +93,6 @@ I have applied the Creative Commons License for this project.
 - <p align="left"><a href ="https://codepen.io/mutedblues/pen/MmPNPG">Hamburger Menu</a></p>
 - <p align="left"><a href="https://chat.openai.com">Chat GPT- general help</a></p> 
 
-
-### Built With
-
-This project was built with Vue 3, using HTML, JavaScript & CSS. Web page was launched using Vercel. GitHub was used for version safety and control. Supabase handles user authenthication and backend. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
