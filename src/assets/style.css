@@ -154,16 +154,6 @@ button:active {
     var(--colorPinkG3) 100%
   );
 }
-/*------------------------ Account ------------------------*/
-.sticky-content img {
-  width: 40%;
-  height: auto;
-  margin: 1rem 0 0;
-  border-radius: 50%;
-}
-.blue-sticky h1 {
-  margin: 0 0 0 0;
-}
 /*------------------- Nav Component -------------------*/
 nav {
   display: flex; 
@@ -342,6 +332,16 @@ width: 300px;
 /* Task as completed */
 .completed {
 text-decoration: line-through;
+}
+/*------------------------ Account ------------------------*/
+.sticky-content img {
+  width: 40%;
+  height: auto;
+  margin: 1rem 0 0;
+  border-radius: 50%;
+}
+.blue-sticky h1 {
+  margin: 0 0 0 0;
 }
  /*------------------- Responsiveness Media Queries -----------------*/
  /* Phone view */

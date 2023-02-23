@@ -43,6 +43,7 @@
         <li><a href="#day-twelve">Wednesday 22, February 2023</a></li>
         <li><a href="#day-thirteen">Thursday 23, February 2023</a></li>
         <li><a href="#day-fourteen">Friday 24, February 2023</a></li>
+        <li><a href="#future">For future ideas</a></li>
       </ul>
     </li>
     <li><a href="#about">About</a></li>
@@ -57,11 +58,11 @@
 
 ## About the Project
 
-
+TaskIt was created as the final project of the Ironhack frontend bootcamp. The goal was to create a task web aplication using Vue 3 applying HTML, CSS and JS learnt in the bootcamp. I based the desing on post-it's because I use them in every day life to manage tasks. In addition to the guidelines I added an extra functionality to the app. Creating a dropdown menu which allows users to set a task state. Based on agile, users can select: "Backlog", "To do" or "Doing". The task state conditions the taskIt's color to pink, orange or yellow. 
 
 Here are the guidelines for the final Vue.js project:
 
-- [x] Creation of account: users will be able to register in the application through a Sign Up process, log in with Log In and log out with Log Out.
+- [x] Creation of account: users will be able to register in the application through a Sign Up process, Log In and Log Out.
 - [x] Task management: users will be able to create, edit, mark/unmark as completed and delete tasks.
 - [x] Data storage: the application will be connected to Supabase and all the information of the tasks and users will be saved on that platform.
 - [x] State management: Pinia stores will be used to connect with the backend and control the state of the application.
@@ -75,9 +76,13 @@ Here are the guidelines for the final Vue.js project:
 
 I have applied the Creative Commons License for this project. 
 
+Project Links: [https://ironhack-final.vercel.app](https://ironhack-final.vercel.app)
+              & [https://github.com/Ikerne/IronhackFinal](https://github.com/Ikerne/IronhackFinal)  
+
+Presentation Link: [https://docs.google.com/presentation/d/1lg283dycfVgMR2mZiS0UTDD-YC9auNtIfAXftpCxAnY/edit?usp=sharing](https://docs.google.com/presentation/d/1lg283dycfVgMR2mZiS0UTDD-YC9auNtIfAXftpCxAnY/edit?usp=sharing) 
 
 Resources:
-     <p align="left"><a href="https://dev.to/thormeier/fully-responsive-html-css-sticky-note-4okl">Sticky Note CSS</a></p>
+    <p align="left"><a href="https://dev.to/thormeier/fully-responsive-html-css-sticky-note-4okl">Sticky Note CSS</a></p>
     <p align="left"><a href="https://colorhunt.co/collection">Color Palette</a></p>
     <p align="left"><a href ="https://colordesigner.io/gradient-generator">Gradient Generator </a></p> <!---chose 20 to generate and chose first 4-->
     <p align="left"><a href ="https://codepen.io/mutedblues/pen/MmPNPG">Hamburger Menu</a></p>
@@ -97,8 +102,7 @@ This project was built with Vue 3, using HTML, JavaScript & CSS. Web page was la
 Note: From monday 13 to friday 17 most of my time will be dedicated to an occupational hazard course. Less time will be spent working on the project during said week.
 
 #### Backlog
-- [ ] Profiles- avatar/profile image
-- [ ] Task Manager view
+
 
 #### Day One
 
@@ -187,40 +191,39 @@ Focused on occupational hazard course
 
 ###### Thursday 23, February 2023
 - [x] Fix nav new issues due to responsiveness
-- [ ] README improvement
-- [ ] Code cleanup
-- [ ] Presentation
-
+- [x] Code cleanup
+- [x] Finish README
 
 #### Day Fourteen
 
 ###### Friday 24, February 2023
-- [ ] Present project
+- [ ] Presentation
 - [ ] Final details check
 
+#### Future
+
+###### For future ideas
+- [ ] Profiles- avatar/profile image
+- [ ] Task Manager view
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Acerca de mi -->
 
-## About
+## About me
 
+This bootcamp has been my first frontend experience, it's been intense, fun and interesting. I've worked as a Language Data Analyst for a company dedicated to AI solutions. 
  
 Ikerne - [https://www.linkedin.com/in/ikernesg/](https://www.linkedin.com/in/ikernesg/) - ikernesanz@gmail.com
-
-<!-- ojo change links this are from the midterm -->
-<!-- Project Links: [https://midterm-ironhack-4d5i2r2pt-ikerne.vercel.app/](https://midterm-ironhack-4d5i2r2pt-ikerne.vercel.app/)
-              & [https://github.com/Ikerne/midterm-ironhack](https://github.com/Ikerne/midterm-ironhack)  
-
-Presentation Link: [https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-GV33y0MsDX1cV2_IcLf5C8I/edit#slide=id.p](https://docs.google.com/presentation/d/1ALLf1G-I5kGCl5IGPHk-GV33y0MsDX1cV2_IcLf5C8I/edit#slide=id.p)  -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 
 ## Acknowledgment
-I want to thank the three professors of this bootcamp at Ironhack; Diego Zito, Jarko Garrido and Aleix Abuli. Thank you for your time, information, patience and the extra hours to help solve all kinds of doubts. Also, to the SOC for providing me with this course so that I can continue training and growing professionally.
+
+I want to thank the three professors of this bootcamp at Ironhack; Diego Zito, Jarko Garrido and Aleix Abuli. Thank you for your time, information, patience and the extra hours to help solve all kinds of doubts. Also, to the SOC for providing me with this course so that I can continue training and growing professionally. To my classmates, thank you for the support and a great time! I would specially like to thank my classmate and friend Laura Anguita for the debugging, laughs and dancing!   
 
 
 
@@ -228,27 +231,32 @@ I want to thank the three professors of this bootcamp at Ironhack; Diego Zito, J
 
 ## Technical Challenge
 
+- Vue.js -> Understanding the components, where to reference what and how. Using the stores, connecting to supabase. As this was my first priject with vue.js and supabase understanding how everything works and how was a struggle. It took patience, time and support from classmates. 
+
+- CSS flex confusion -> My Task container & wrapper CSS is a mess, I had to patch it up with margins and could not figure out where the issue is or how to fix it. It looks ok but I know it's not... eye twitch...
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Big Mistake
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- JS and Vue glitches -> The biggest mistake was not understanding fully what I was doing and getting desperate, stressed and frustrated. Little by little, with support from teachers and classmates, I was able to understand the code. Managing to add exta functionality to the app with "task status/color". 
 
+- Underestimating CSS -> I thought the worst was over after I got all the functional parts to work and that the design would be easier. It seemed simple enough... before I stated working on it. It took more patience, effort and tirals than the rest. 
+
+- Stress management -> When I got stuck, over glitches and flex, it frustrated me. Which got me obsessed, to the pont where forgot to eat or drink and laughed manically too many times to count. 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Cheat Sheet
 
 Check git satus:
 git status
 
-
-Shortcut to add changes to GitHub
+Shortcut to add changes to GitHub:
 git add . && git commit -m " " && git push
 
-Launch host app
+Launch host app:
 npm run dev
 
-notes left by me for me can be found by searching for ojo with cmd+f
-ojo
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
