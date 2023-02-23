@@ -209,7 +209,7 @@ Focused on occupational hazard course
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- Acerca de mi -->
+
 
 ## About me
 
