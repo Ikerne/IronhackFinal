@@ -9,5 +9,3 @@ defineProps({
   buttonText: String,
 });
 </script>
-
-<style></style>
