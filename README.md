@@ -4,15 +4,13 @@
 *** See the bottom of this document for the declaration of reference variables
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-
 <!-- "back to top" -->
-
 <a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="./src/Images/HomeScreenshot.png" alt="Logo" width="100%" height="100%"> <!--ojo-->
+  <img src="./src/Images/HomeScreenshot.png" alt="Logo" width="100%" height="100%">
   <h3 align="center">Task App</h3>
   <a href="https://ironhack-final.vercel.app">Visit Website</a> <!--ojo-->
 </div>
@@ -58,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About the Project
-
+  <img src="./src/Images/HomeScreenshotTriangle.png" alt="Logo" width="100%" height="100%">
 
 
 Here are the guidelines for the final Vue.js project:

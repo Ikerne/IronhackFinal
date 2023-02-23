@@ -212,7 +212,7 @@ nav {
   
 }
 .nav-link:nth-child(1){
-  margin-left: 15px;
+  margin-left: 3vw;
   padding: 0;
 }
 .home-hide{
@@ -220,7 +220,7 @@ nav {
 }
 nav div{
   display: flex;
-  margin-right: 15px;
+  margin-right: 3vw;
 }
 
   /*-------------- Sign In & Sign Up Components --------------*/
