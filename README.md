@@ -56,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About the Project
-  <img src="./src/Images/HomeScreenshotTriangle.png" alt="Logo" width="100%" height="100%">
+  <img src="./src/Images/HomeScreenshotTriangle.png" alt="Logo" width="20%" height="20%">
 
 
 Here are the guidelines for the final Vue.js project:
