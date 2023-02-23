@@ -200,7 +200,10 @@ nav {
   font-family: var(--fontFamily);
   font-weight: 300;
   padding: 5px;
-  
+  display: block; 
+}
+.log-out-welcome p{
+  display: block; 
 }
 .nav-link:nth-child(1){
   margin-left: 3vw;
@@ -396,8 +399,8 @@ text-decoration: line-through;
     .button-burger{margin-top: 5px;}
   }
   /* Tablet view */
-  @media screen and (max-width: 768px) {
-     /*sticky*/
+ /* @media screen and (max-width: 768px) {
+    
     .sticky:before {
       height: 75%;
       width: 90%;
@@ -411,7 +414,7 @@ text-decoration: line-through;
     .task-wrapper{
       margin: 0 0 0 80px;
     }
-     /*nav burger menu*/
+     
     .burger-hide{
       display: none;
    }
@@ -439,5 +442,8 @@ text-decoration: line-through;
    }
    .home-hide{
      display: block;
+   } 
+   .log-out-welcome p{
+    display: none;
    }
-  }
+  }*/
