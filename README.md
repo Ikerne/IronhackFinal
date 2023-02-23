@@ -43,7 +43,7 @@
         <li><a href="#day-twelve">Wednesday 22, February 2023</a></li>
         <li><a href="#day-thirteen">Thursday 23, February 2023</a></li>
         <li><a href="#day-fourteen">Friday 24, February 2023</a></li>
-        <li><a href="#future">For future ideas</a></li>
+        <li><a href="#future">Future</a></li>
       </ul>
     </li>
     <li><a href="#about">About</a></li>
