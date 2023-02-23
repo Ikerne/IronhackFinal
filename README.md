@@ -13,6 +13,7 @@
   <img src="./src/Images/HomeScreenshot.png" alt="Logo" width="100%" height="100%">
   <h3 align="center">Task App</h3>
   <a href="https://ironhack-final.vercel.app">Visit Website</a> 
+  <a href="https://docs.google.com/presentation/d/1lg283dycfVgMR2mZiS0UTDD-YC9auNtIfAXftpCxAnY/edit?usp=sharing">Visit Presentation</a> 
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -22,7 +23,9 @@
     <li>
       <a href="#about-the-project">About the Project</a>
       <ul>
-        <li><a href="#built-with">Built With </a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#license">License</a></li>
+        <li><a href="#Resources">Resources</a></li>
       </ul>
     </li>
     <li>
@@ -73,25 +76,18 @@ Here are the guidelines for the final Vue.js project:
 - [x] Handling of asynchronous operations: asynchronous operations will be handled correctly with promises or async/await.
 - [x] Documentation: a work path will be maintained in the repository's readme, updating it daily.
 
+### License
 
 I have applied the Creative Commons License for this project. 
 
-Links: 
+### Resources
 
-- Project Links: [https://ironhack-final.vercel.app](https://ironhack-final.vercel.app)
-              & [https://github.com/Ikerne/IronhackFinal](https://github.com/Ikerne/IronhackFinal)  
-
-- Presentation Link: [https://docs.google.com/presentation/d/1lg283dycfVgMR2mZiS0UTDD-YC9auNtIfAXftpCxAnY/edit?usp=sharing](https://docs.google.com/presentation/d/1lg283dycfVgMR2mZiS0UTDD-YC9auNtIfAXftpCxAnY/edit?usp=sharing) 
-
-Resources:
 - <p align="left"><a href="https://dev.to/thormeier/fully-responsive-html-css-sticky-note-4okl">Sticky Note CSS</a></p>
 - <p align="left"><a href="https://colorhunt.co/collection">Color Palette</a></p>
 - <p align="left"><a href ="https://colordesigner.io/gradient-generator">Gradient Generator </a></p> <!---chose 20 to generate and chose first 4-->
 - <p align="left"><a href ="https://codepen.io/mutedblues/pen/MmPNPG">Hamburger Menu</a></p>
 - <p align="left"><a href="https://chat.openai.com">Chat GPT- general help</a></p> 
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
@@ -137,6 +133,7 @@ Note: From monday 13 to friday 17 most of my time will be dedicated to an occupa
 - [x] Completed Task functionality
 - [x] Update Task HTML & functionality
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### Day Five
 
@@ -168,6 +165,8 @@ Focused on occupational hazard course
 
 ###### Friday 17, February 2023
 Focused on occupational hazard course
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### Day Ten
 
