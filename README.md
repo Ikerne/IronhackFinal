@@ -12,7 +12,7 @@
 <div align="center">
   <img src="./src/Images/HomeScreenshot.png" alt="Logo" width="100%" height="100%">
   <h3 align="center">Task App</h3>
-  <a href="https://ironhack-final.vercel.app">Visit Website</a> <!--ojo-->
+  <a href="https://ironhack-final.vercel.app">Visit Website</a> 
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -81,7 +81,7 @@ Resources:
     <p align="left"><a href="https://colorhunt.co/collection">Color Palette</a></p>
     <p align="left"><a href ="https://colordesigner.io/gradient-generator">Gradient Generator </a></p> <!---chose 20 to generate and chose first 4-->
     <p align="left"><a href ="https://codepen.io/mutedblues/pen/MmPNPG">Hamburger Menu</a></p>
-    <p align="left"><a href="#link"></a>description</p> 
+    <p align="left"><a href="https://chat.openai.com">Chat GPT- general help</a></p> 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -189,13 +189,13 @@ Focused on occupational hazard course
 - [x] Fix nav new issues due to responsiveness
 - [ ] README improvement
 - [ ] Code cleanup
-- [ ] Make Presentation
+- [ ] Presentation
 
 
 #### Day Fourteen
 
 ###### Friday 24, February 2023
-- [ ] Presentation
+- [ ] Present project
 - [ ] Final details check
 
 
