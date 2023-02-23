@@ -250,13 +250,13 @@ I want to thank the three professors of this bootcamp at Ironhack; Diego Zito, J
 
 ## Cheat Sheet
 
-Check git satus:
+- Check git satus:
 git status
 
-Shortcut to add changes to GitHub:
+- Shortcut to add changes to GitHub:
 git add . && git commit -m " " && git push
 
-Launch host app:
+- Launch host app:
 npm run dev
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
