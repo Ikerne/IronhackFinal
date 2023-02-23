@@ -190,6 +190,7 @@ Focused on occupational hazard course
 ###### Thursday 23, February 2023
 - [ ] README improvement
 - [ ] Code cleanup
+- [ ] Make Presentation
 
 
 #### Day Fourteen
