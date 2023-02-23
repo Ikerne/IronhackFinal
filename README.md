@@ -202,7 +202,7 @@ Focused on occupational hazard course
 
 #### Future
 
-###### Future
+###### Future ideas
 - [ ] Profiles- avatar/profile image
 - [ ] Task Manager view
 
