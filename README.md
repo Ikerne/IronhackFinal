@@ -93,7 +93,7 @@ Resources:
 
 ### Built With
 
-This project was built with Vue 3, using HTML, JavaScript & CSS. Web page was launched using vercel. GitHub was used for version safety and control. 
+This project was built with Vue 3, using HTML, JavaScript & CSS. Web page was launched using Vercel. GitHub was used for version safety and control. Supabase handles user authenthication and backend. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
