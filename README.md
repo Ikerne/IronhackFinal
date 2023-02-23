@@ -232,11 +232,14 @@ I want to thank the three professors of this bootcamp at Ironhack; Diego Zito, J
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Big Mistake
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- Cheat Sheet -->
+
+
 ## Cheat Sheet
+
 Check git satus:
 git status
 

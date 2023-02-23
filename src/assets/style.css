@@ -37,6 +37,7 @@ body {
     color: var(--colorBlack);
     width:100vw;
     padding-right: 10px;
+    margin: 0;
 }
 button {
     background-color: var(--colorWhite);
@@ -167,7 +168,9 @@ button:active {
 nav {
   display: flex; 
   align-items: center; 
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+
   flex-direction: row;
   background-color: var(--colorBlue);
   color: var(--colorwhite);
@@ -184,6 +187,7 @@ nav {
     font-weight: 400;
     padding: 2.5vw;
     font-size: var(--fontSize-sm);
+   
 }
 .burger{
 display: block;
@@ -203,12 +207,30 @@ display: none;
   padding: 0;
   flex-direction: row;
 }
-.log-out-welcome p {
+.log-out-welcome  {
   color: var(--colorWhite);
   font-family: var(--fontFamily);
   font-weight: 300;
   padding: 5px;
+  /* justify-content: right; */
+
 }
+
+
+.nav-link:nth-child(1){
+  margin-left: 15px;
+  padding: 0;
+}
+.home-hide{
+  display: none;
+}
+/* .log-out{
+  justify-content: right;} */
+nav div{
+  display: flex;
+  margin-right: 15px;
+}
+
   /*-------------- Sign In & Sign Up Components --------------*/
 h3 {
   color: var(--colorBlack);
@@ -371,6 +393,9 @@ text-decoration: line-through;
     }
     .menu li {
       margin: 2px 0;
+    }
+    .home-hide{
+      display: block;
     }
   }
   /* Tablet view */

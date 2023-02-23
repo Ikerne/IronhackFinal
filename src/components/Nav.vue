@@ -1,21 +1,28 @@
 <template>
   <nav>
+    <router-link class="nav-link burger-hide" to="/">Home</router-link>
+      
     <ul class="menu" :class="{ 'show-menu': showMenu }">
-      <li><router-link class="nav-link" to="/">Home</router-link></li>
+      <li><router-link class="nav-link home-hide" to="/">Home</router-link></li>
       <li>
         <router-link class="nav-link" to="/taskManager">Task Manager</router-link>
       </li>
       <li>
         <router-link class="nav-link" to="/account">Your Account</router-link>
       </li>
-      <li class="log-out-welcome  burger-hide" v-if="userEmail">
+      <li class="log-out-welcome  burger-hide home-hide" v-if="userEmail">
         <p>Welcome, {{ userEmail.split("@")[0] }}</p>
       </li>
       <li v-if="userEmail">
-        <button @click="signOut" class="button">Log out</button>
+        <button @click="signOut" class="button home-hide">Log out</button>
       </li>
     </ul>
     <button class="burger button-burger " @click="showMenu = !showMenu">☰</button>
+    <div>
+      <p  class="log-out-welcome  burger-hide">Welcome, {{ userEmail.split("@")[0] }}</p>
+      <button @click="signOut" class="button burger-hide log-out">Log out</button>
+      </div>
+      
   </nav>
 
 </template>
@@ -32,7 +39,6 @@ const route = "/";
 const buttonText = "Todo app";
 const userName = ref("");
 // constant to save a variable that will get the user from store with a computed function imported from vue
-// const getUser = computed(() => useUserStore().user);
 const getUser = computed(() => useUserStore().user);
 
 // constant that calls user email from the useUSerStore
@@ -48,7 +54,7 @@ getEmail();
 const redirect = useRouter();
 
 const signOut = async () => {
-  console.log("Entered the sign out function");
+  // console.log("Entered the sign out function");
   try {
     // call the user store and send the users info to backend to signOut
     await useUserStore().signOut();
@@ -61,11 +67,6 @@ const signOut = async () => {
 };
 // show burger menu
 const showMenu = ref(false);
-// onMounted(() => {
-//   useUserStore().fetchUser();
-//   userName.value = useUserStore().profile.username;
-//   console.log(useUserStore().user);
-// });
 </script>
 
 <style></style>
