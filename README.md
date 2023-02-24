@@ -233,20 +233,23 @@ I want to thank the three professors of this bootcamp at Ironhack; Diego Zito, J
 
 ## Technical Challenge
 
-- Vue.js -> Understanding the components, where to reference what and how. Using the stores, connecting to supabase. As this was my first priject with vue.js and supabase understanding how everything works and how was a struggle. It took patience, time and support from classmates. 
+- Vue.js -> Understanding the components, where to reference what and how. Using the stores, connecting to supabase. As this was my first project with vue.js and supabase understanding how everything works was a struggle. It took patience, time and support from classmates. 
 
-- CSS flex confusion -> My Task container & wrapper CSS is a mess, I had to patch it up with margins and could not figure out where the issue is or how to fix it. It looks ok but I know it's not... eye twitch...
+- CSS flex confusion -> My Task container & wrapper CSS are a mess, I had to patch it up with margins and could not figure out where the issue is or how to fix it. It looks ok but I know it's not... eye twitch...
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Big Mistake
 
+- Stress management -> When I got stuck, over glitches and flex, it frustrated me. Which got me obsessed, to the point where forgot to eat or drink and laughed manically too many times to count. 
+
 - JS and Vue glitches -> The biggest mistake was not understanding fully what I was doing and getting desperate, stressed and frustrated. Little by little, with support from teachers and classmates, I was able to understand the code. Managing to add exta functionality to the app with "task status/color". 
 
 - Underestimating CSS -> I thought the worst was over after I got all the functional parts to work and that the design would be easier. It seemed simple enough... before I stated working on it. It took more patience, effort and tirals than the rest. 
 
-- Stress management -> When I got stuck, over glitches and flex, it frustrated me. Which got me obsessed, to the pont where forgot to eat or drink and laughed manically too many times to count. 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
