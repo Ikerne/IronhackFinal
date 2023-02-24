@@ -199,8 +199,8 @@ Focused on occupational hazard course
 #### Day Fourteen
 
 ###### Friday 24, February 2023
-- [ ] Presentation
-- [ ] Final details check
+- [x] Presentation
+- [x] Final details check
 
 #### Future
 

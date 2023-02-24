@@ -135,7 +135,7 @@ const updateTask = () => {
 }
 setTimeout(() => {
  showUpdateForm.value = false;
-}, 1);
+}, 5000);
 };
 </script>
 <!--
